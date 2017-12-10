@@ -1,0 +1,3270 @@
+Socket {
+  connecting: false,
+  _hadError: false,
+  _handle: 
+   TCP {
+     bytesRead: 2740,
+     _externalStream: {},
+     fd: -1,
+     reading: true,
+     owner: [Circular],
+     onread: 
+      { [Function: onread]
+        [length]: 2,
+        [name]: 'onread',
+        [prototype]: onread { [constructor]: [Circular] } },
+     onconnection: null,
+     writeQueueSize: 0 },
+  _parent: null,
+  _host: null,
+  _readableState: 
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 16384,
+     buffer: BufferList { head: null, tail: null, length: 0 },
+     length: 0,
+     pipes: null,
+     pipesCount: 0,
+     flowing: true,
+     ended: false,
+     endEmitted: false,
+     reading: true,
+     sync: false,
+     needReadable: true,
+     emittedReadable: false,
+     readableListening: false,
+     resumeScheduled: false,
+     defaultEncoding: 'utf8',
+     ranOut: false,
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: 
+   { end: 
+      [ { [Function: g]
+          [length]: 0,
+          [name]: 'g',
+          [prototype]: g { [constructor]: [Circular] },
+          listener: 
+           { [Function: onend]
+             [length]: 0,
+             [name]: 'onend',
+             [prototype]: onend { [constructor]: [Circular] } } },
+        { [Function: socketOnEnd]
+          [length]: 0,
+          [name]: 'socketOnEnd',
+          [prototype]: socketOnEnd { [constructor]: [Circular] } },
+        [length]: 2 ],
+     finish: 
+      { [Function: onSocketFinish]
+        [length]: 0,
+        [name]: 'onSocketFinish',
+        [prototype]: onSocketFinish { [constructor]: [Circular] } },
+     _socketEnd: 
+      { [Function: onSocketEnd]
+        [length]: 0,
+        [name]: 'onSocketEnd',
+        [prototype]: onSocketEnd { [constructor]: [Circular] } },
+     drain: 
+      [ { [Function: ondrain]
+          [length]: 0,
+          [name]: 'ondrain',
+          [prototype]: ondrain { [constructor]: [Circular] } },
+        { [Function: socketOnDrain]
+          [length]: 0,
+          [name]: 'socketOnDrain',
+          [prototype]: socketOnDrain { [constructor]: [Circular] } },
+        [length]: 2 ],
+     timeout: 
+      { [Function]
+        [length]: 0,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] } },
+     error: 
+      { [Function: socketOnError]
+        [length]: 1,
+        [name]: 'socketOnError',
+        [prototype]: socketOnError { [constructor]: [Circular] } },
+     close: 
+      [ { [Function: serverSocketCloseListener]
+          [length]: 0,
+          [name]: 'serverSocketCloseListener',
+          [prototype]: serverSocketCloseListener { [constructor]: [Circular] } },
+        { [Function: onServerResponseClose]
+          [length]: 0,
+          [name]: 'onServerResponseClose',
+          [prototype]: onServerResponseClose { [constructor]: [Circular] } },
+        [length]: 2 ],
+     data: 
+      { [Function: socketOnData]
+        [length]: 1,
+        [name]: 'socketOnData',
+        [prototype]: socketOnData { [constructor]: [Circular] } },
+     resume: 
+      { [Function: onSocketResume]
+        [length]: 0,
+        [name]: 'onSocketResume',
+        [prototype]: onSocketResume { [constructor]: [Circular] } },
+     pause: 
+      { [Function: onSocketPause]
+        [length]: 0,
+        [name]: 'onSocketPause',
+        [prototype]: onSocketPause { [constructor]: [Circular] } } },
+  _eventsCount: 10,
+  _maxListeners: undefined,
+  _writableState: 
+   WritableState {
+     objectMode: false,
+     highWaterMark: 16384,
+     needDrain: false,
+     ending: false,
+     ended: false,
+     finished: false,
+     decodeStrings: false,
+     defaultEncoding: 'utf8',
+     length: 0,
+     writing: false,
+     corked: 0,
+     sync: false,
+     bufferProcessing: false,
+     onwrite: 
+      { [Function]
+        [length]: 1,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] } },
+     writecb: null,
+     writelen: 0,
+     bufferedRequest: null,
+     lastBufferedRequest: null,
+     pendingcb: 0,
+     prefinished: false,
+     errorEmitted: false,
+     bufferedRequestCount: 0,
+     corkedRequestsFree: 
+      CorkedRequest {
+        next: 
+         CorkedRequest {
+           next: null,
+           entry: null,
+           finish: { [Function] [length]: 1, [name]: '' } },
+        entry: null,
+        finish: { [Function] [length]: 1, [name]: '' } } },
+  writable: true,
+  allowHalfOpen: true,
+  destroyed: false,
+  _bytesDispatched: 7597,
+  _sockname: null,
+  _pendingData: null,
+  _pendingEncoding: '',
+  server: 
+   Server {
+     domain: null,
+     _events: 
+      { connection: 
+         { [Function: connectionListener]
+           [length]: 1,
+           [name]: 'connectionListener',
+           [prototype]: connectionListener { [constructor]: [Circular] } },
+        close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+        upgrade: 
+         { [Function]
+           [length]: 3,
+           [name]: '',
+           [arguments]: null,
+           [caller]: null,
+           [prototype]: { [constructor]: [Circular] } },
+        request: 
+         { [Function]
+           [length]: 2,
+           [name]: '',
+           [arguments]: null,
+           [caller]: null,
+           [prototype]: { [constructor]: [Circular] } } },
+     _eventsCount: 4,
+     _maxListeners: undefined,
+     _connections: 5,
+     [connections]: [Getter/Setter],
+     _handle: 
+      TCP {
+        bytesRead: 0,
+        _externalStream: {},
+        fd: -1,
+        reading: false,
+        owner: [Circular],
+        onread: null,
+        onconnection: 
+         { [Function: onconnection]
+           [length]: 2,
+           [name]: 'onconnection',
+           [prototype]: onconnection { [constructor]: [Circular] } },
+        writeQueueSize: 0 },
+     _usingSlaves: false,
+     _slaves: [ [length]: 0 ],
+     _unref: false,
+     allowHalfOpen: true,
+     pauseOnConnect: false,
+     httpAllowHalfOpen: false,
+     timeout: 120000,
+     _pendingResponseData: 0,
+     _connectionKey: '6::::8080' },
+  _server: 
+   Server {
+     domain: null,
+     _events: 
+      { connection: 
+         { [Function: connectionListener]
+           [length]: 1,
+           [name]: 'connectionListener',
+           [prototype]: connectionListener { [constructor]: [Circular] } },
+        close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+        upgrade: 
+         { [Function]
+           [length]: 3,
+           [name]: '',
+           [arguments]: null,
+           [caller]: null,
+           [prototype]: { [constructor]: [Circular] } },
+        request: 
+         { [Function]
+           [length]: 2,
+           [name]: '',
+           [arguments]: null,
+           [caller]: null,
+           [prototype]: { [constructor]: [Circular] } } },
+     _eventsCount: 4,
+     _maxListeners: undefined,
+     _connections: 5,
+     [connections]: [Getter/Setter],
+     _handle: 
+      TCP {
+        bytesRead: 0,
+        _externalStream: {},
+        fd: -1,
+        reading: false,
+        owner: [Circular],
+        onread: null,
+        onconnection: 
+         { [Function: onconnection]
+           [length]: 2,
+           [name]: 'onconnection',
+           [prototype]: onconnection { [constructor]: [Circular] } },
+        writeQueueSize: 0 },
+     _usingSlaves: false,
+     _slaves: [ [length]: 0 ],
+     _unref: false,
+     allowHalfOpen: true,
+     pauseOnConnect: false,
+     httpAllowHalfOpen: false,
+     timeout: 120000,
+     _pendingResponseData: 0,
+     _connectionKey: '6::::8080' },
+  _idleTimeout: 120000,
+  _idleNext: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 0,
+        _externalStream: {},
+        fd: -1,
+        reading: true,
+        owner: [Circular],
+        onread: 
+         { [Function: onread]
+           [length]: 2,
+           [name]: 'onread',
+           [prototype]: onread { [constructor]: [Circular] } },
+        onconnection: null,
+        writeQueueSize: 0 },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: BufferList { head: null, tail: null, length: 0 },
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: 
+         [ { [Function: g]
+             [length]: 0,
+             [name]: 'g',
+             [prototype]: g { [constructor]: [Circular] },
+             listener: 
+              { [Function: onend]
+                [length]: 0,
+                [name]: 'onend',
+                [prototype]: onend { [constructor]: [Circular] } } },
+           { [Function: socketOnEnd]
+             [length]: 0,
+             [name]: 'socketOnEnd',
+             [prototype]: socketOnEnd { [constructor]: [Circular] } },
+           [length]: 2 ],
+        finish: 
+         { [Function: onSocketFinish]
+           [length]: 0,
+           [name]: 'onSocketFinish',
+           [prototype]: onSocketFinish { [constructor]: [Circular] } },
+        _socketEnd: 
+         { [Function: onSocketEnd]
+           [length]: 0,
+           [name]: 'onSocketEnd',
+           [prototype]: onSocketEnd { [constructor]: [Circular] } },
+        drain: 
+         [ { [Function: ondrain]
+             [length]: 0,
+             [name]: 'ondrain',
+             [prototype]: ondrain { [constructor]: [Circular] } },
+           { [Function: socketOnDrain]
+             [length]: 0,
+             [name]: 'socketOnDrain',
+             [prototype]: socketOnDrain { [constructor]: [Circular] } },
+           [length]: 2 ],
+        timeout: 
+         { [Function]
+           [length]: 0,
+           [name]: '',
+           [prototype]: { [constructor]: [Circular] } },
+        error: 
+         { [Function: socketOnError]
+           [length]: 1,
+           [name]: 'socketOnError',
+           [prototype]: socketOnError { [constructor]: [Circular] } },
+        close: 
+         { [Function: serverSocketCloseListener]
+           [length]: 0,
+           [name]: 'serverSocketCloseListener',
+           [prototype]: serverSocketCloseListener { [constructor]: [Circular] } },
+        data: 
+         { [Function: socketOnData]
+           [length]: 1,
+           [name]: 'socketOnData',
+           [prototype]: socketOnData { [constructor]: [Circular] } },
+        resume: 
+         { [Function: onSocketResume]
+           [length]: 0,
+           [name]: 'onSocketResume',
+           [prototype]: onSocketResume { [constructor]: [Circular] } },
+        pause: 
+         { [Function: onSocketPause]
+           [length]: 0,
+           [name]: 'onSocketPause',
+           [prototype]: onSocketPause { [constructor]: [Circular] } } },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: 
+         { [Function]
+           [length]: 1,
+           [name]: '',
+           [prototype]: { [constructor]: [Circular] } },
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: 
+         CorkedRequest {
+           next: null,
+           entry: null,
+           finish: { [Function] [length]: 1, [name]: '' } } },
+     writable: true,
+     allowHalfOpen: true,
+     destroyed: false,
+     _bytesDispatched: 0,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: 
+         { connection: 
+            { [Function: connectionListener]
+              [length]: 1,
+              [name]: 'connectionListener',
+              [prototype]: connectionListener { [constructor]: [Circular] } },
+           close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+           upgrade: 
+            { [Function]
+              [length]: 3,
+              [name]: '',
+              [arguments]: null,
+              [caller]: null,
+              [prototype]: { [constructor]: [Circular] } },
+           request: 
+            { [Function]
+              [length]: 2,
+              [name]: '',
+              [arguments]: null,
+              [caller]: null,
+              [prototype]: { [constructor]: [Circular] } } },
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _connections: 5,
+        [connections]: [Getter/Setter],
+        _handle: 
+         TCP {
+           bytesRead: 0,
+           _externalStream: {},
+           fd: -1,
+           reading: false,
+           owner: [Circular],
+           onread: null,
+           onconnection: 
+            { [Function: onconnection]
+              [length]: 2,
+              [name]: 'onconnection',
+              [prototype]: onconnection { [constructor]: [Circular] } },
+           writeQueueSize: 0 },
+        _usingSlaves: false,
+        _slaves: [ [length]: 0 ],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::8080' },
+     _server: 
+      Server {
+        domain: null,
+        _events: 
+         { connection: 
+            { [Function: connectionListener]
+              [length]: 1,
+              [name]: 'connectionListener',
+              [prototype]: connectionListener { [constructor]: [Circular] } },
+           close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+           upgrade: 
+            { [Function]
+              [length]: 3,
+              [name]: '',
+              [arguments]: null,
+              [caller]: null,
+              [prototype]: { [constructor]: [Circular] } },
+           request: 
+            { [Function]
+              [length]: 2,
+              [name]: '',
+              [arguments]: null,
+              [caller]: null,
+              [prototype]: { [constructor]: [Circular] } } },
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _connections: 5,
+        [connections]: [Getter/Setter],
+        _handle: 
+         TCP {
+           bytesRead: 0,
+           _externalStream: {},
+           fd: -1,
+           reading: false,
+           owner: [Circular],
+           onread: null,
+           onconnection: 
+            { [Function: onconnection]
+              [length]: 2,
+              [name]: 'onconnection',
+              [prototype]: onconnection { [constructor]: [Circular] } },
+           writeQueueSize: 0 },
+        _usingSlaves: false,
+        _slaves: [ [length]: 0 ],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::8080' },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: 
+         TCP {
+           bytesRead: 0,
+           _externalStream: {},
+           fd: -1,
+           reading: true,
+           owner: [Circular],
+           onread: 
+            { [Function: onread]
+              [length]: 2,
+              [name]: 'onread',
+              [prototype]: onread { [constructor]: [Circular] } },
+           onconnection: null,
+           writeQueueSize: 0 },
+        _parent: null,
+        _host: null,
+        _readableState: 
+         ReadableState {
+           objectMode: false,
+           highWaterMark: 16384,
+           buffer: BufferList { head: null, tail: null, length: 0 },
+           length: 0,
+           pipes: null,
+           pipesCount: 0,
+           flowing: true,
+           ended: false,
+           endEmitted: false,
+           reading: true,
+           sync: false,
+           needReadable: true,
+           emittedReadable: false,
+           readableListening: false,
+           resumeScheduled: false,
+           defaultEncoding: 'utf8',
+           ranOut: false,
+           awaitDrain: 0,
+           readingMore: false,
+           decoder: null,
+           encoding: null },
+        readable: true,
+        domain: null,
+        _events: 
+         { end: 
+            [ { [Function: g]
+                [length]: 0,
+                [name]: 'g',
+                [prototype]: g { [constructor]: [Circular] },
+                listener: 
+                 { [Function: onend]
+                   [length]: 0,
+                   [name]: 'onend',
+                   [prototype]: onend { [constructor]: [Circular] } } },
+              { [Function: socketOnEnd]
+                [length]: 0,
+                [name]: 'socketOnEnd',
+                [prototype]: socketOnEnd { [constructor]: [Circular] } },
+              [length]: 2 ],
+           finish: 
+            { [Function: onSocketFinish]
+              [length]: 0,
+              [name]: 'onSocketFinish',
+              [prototype]: onSocketFinish { [constructor]: [Circular] } },
+           _socketEnd: 
+            { [Function: onSocketEnd]
+              [length]: 0,
+              [name]: 'onSocketEnd',
+              [prototype]: onSocketEnd { [constructor]: [Circular] } },
+           drain: 
+            [ { [Function: ondrain]
+                [length]: 0,
+                [name]: 'ondrain',
+                [prototype]: ondrain { [constructor]: [Circular] } },
+              { [Function: socketOnDrain]
+                [length]: 0,
+                [name]: 'socketOnDrain',
+                [prototype]: socketOnDrain { [constructor]: [Circular] } },
+              [length]: 2 ],
+           timeout: 
+            { [Function]
+              [length]: 0,
+              [name]: '',
+              [prototype]: { [constructor]: [Circular] } },
+           error: 
+            { [Function: socketOnError]
+              [length]: 1,
+              [name]: 'socketOnError',
+              [prototype]: socketOnError { [constructor]: [Circular] } },
+           close: 
+            { [Function: serverSocketCloseListener]
+              [length]: 0,
+              [name]: 'serverSocketCloseListener',
+              [prototype]: serverSocketCloseListener { [constructor]: [Circular] } },
+           data: 
+            { [Function: socketOnData]
+              [length]: 1,
+              [name]: 'socketOnData',
+              [prototype]: socketOnData { [constructor]: [Circular] } },
+           resume: 
+            { [Function: onSocketResume]
+              [length]: 0,
+              [name]: 'onSocketResume',
+              [prototype]: onSocketResume { [constructor]: [Circular] } },
+           pause: 
+            { [Function: onSocketPause]
+              [length]: 0,
+              [name]: 'onSocketPause',
+              [prototype]: onSocketPause { [constructor]: [Circular] } } },
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: 
+         WritableState {
+           objectMode: false,
+           highWaterMark: 16384,
+           needDrain: false,
+           ending: false,
+           ended: false,
+           finished: false,
+           decodeStrings: false,
+           defaultEncoding: 'utf8',
+           length: 0,
+           writing: false,
+           corked: 0,
+           sync: true,
+           bufferProcessing: false,
+           onwrite: 
+            { [Function]
+              [length]: 1,
+              [name]: '',
+              [prototype]: { [constructor]: [Circular] } },
+           writecb: null,
+           writelen: 0,
+           bufferedRequest: null,
+           lastBufferedRequest: null,
+           pendingcb: 0,
+           prefinished: false,
+           errorEmitted: false,
+           bufferedRequestCount: 0,
+           corkedRequestsFree: 
+            CorkedRequest {
+              next: null,
+              entry: null,
+              finish: { [Function] [length]: 1, [name]: '' } } },
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: 
+         Server {
+           domain: null,
+           _events: 
+            { connection: 
+               { [Function: connectionListener]
+                 [length]: 1,
+                 [name]: 'connectionListener',
+                 [prototype]: connectionListener { [constructor]: [Circular] } },
+              close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+              upgrade: 
+               { [Function]
+                 [length]: 3,
+                 [name]: '',
+                 [arguments]: null,
+                 [caller]: null,
+                 [prototype]: { [constructor]: [Circular] } },
+              request: 
+               { [Function]
+                 [length]: 2,
+                 [name]: '',
+                 [arguments]: null,
+                 [caller]: null,
+                 [prototype]: { [constructor]: [Circular] } } },
+           _eventsCount: 4,
+           _maxListeners: undefined,
+           _connections: 5,
+           [connections]: [Getter/Setter],
+           _handle: 
+            TCP {
+              bytesRead: 0,
+              _externalStream: {},
+              fd: -1,
+              reading: false,
+              owner: [Circular],
+              onread: null,
+              onconnection: 
+               { [Function: onconnection]
+                 [length]: 2,
+                 [name]: 'onconnection',
+                 [prototype]: onconnection { [constructor]: [Circular] } },
+              writeQueueSize: 0 },
+           _usingSlaves: false,
+           _slaves: [ [length]: 0 ],
+           _unref: false,
+           allowHalfOpen: true,
+           pauseOnConnect: false,
+           httpAllowHalfOpen: false,
+           timeout: 120000,
+           _pendingResponseData: 0,
+           _connectionKey: '6::::8080' },
+        _server: 
+         Server {
+           domain: null,
+           _events: 
+            { connection: 
+               { [Function: connectionListener]
+                 [length]: 1,
+                 [name]: 'connectionListener',
+                 [prototype]: connectionListener { [constructor]: [Circular] } },
+              close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+              upgrade: 
+               { [Function]
+                 [length]: 3,
+                 [name]: '',
+                 [arguments]: null,
+                 [caller]: null,
+                 [prototype]: { [constructor]: [Circular] } },
+              request: 
+               { [Function]
+                 [length]: 2,
+                 [name]: '',
+                 [arguments]: null,
+                 [caller]: null,
+                 [prototype]: { [constructor]: [Circular] } } },
+           _eventsCount: 4,
+           _maxListeners: undefined,
+           _connections: 5,
+           [connections]: [Getter/Setter],
+           _handle: 
+            TCP {
+              bytesRead: 0,
+              _externalStream: {},
+              fd: -1,
+              reading: false,
+              owner: [Circular],
+              onread: null,
+              onconnection: 
+               { [Function: onconnection]
+                 [length]: 2,
+                 [name]: 'onconnection',
+                 [prototype]: onconnection { [constructor]: [Circular] } },
+              writeQueueSize: 0 },
+           _usingSlaves: false,
+           _slaves: [ [length]: 0 ],
+           _unref: false,
+           allowHalfOpen: true,
+           pauseOnConnect: false,
+           httpAllowHalfOpen: false,
+           timeout: 120000,
+           _pendingResponseData: 0,
+           _connectionKey: '6::::8080' },
+        _idleTimeout: 120000,
+        _idleNext: 
+         Socket {
+           connecting: false,
+           _hadError: false,
+           _handle: 
+            TCP {
+              bytesRead: 0,
+              _externalStream: {},
+              fd: -1,
+              reading: true,
+              owner: [Circular],
+              onread: 
+               { [Function: onread]
+                 [length]: 2,
+                 [name]: 'onread',
+                 [prototype]: onread { [constructor]: [Circular] } },
+              onconnection: null,
+              writeQueueSize: 0 },
+           _parent: null,
+           _host: null,
+           _readableState: 
+            ReadableState {
+              objectMode: false,
+              highWaterMark: 16384,
+              buffer: BufferList { head: null, tail: null, length: 0 },
+              length: 0,
+              pipes: null,
+              pipesCount: 0,
+              flowing: true,
+              ended: false,
+              endEmitted: false,
+              reading: true,
+              sync: false,
+              needReadable: true,
+              emittedReadable: false,
+              readableListening: false,
+              resumeScheduled: false,
+              defaultEncoding: 'utf8',
+              ranOut: false,
+              awaitDrain: 0,
+              readingMore: false,
+              decoder: null,
+              encoding: null },
+           readable: true,
+           domain: null,
+           _events: 
+            { end: 
+               [ { [Function: g]
+                   [length]: 0,
+                   [name]: 'g',
+                   [prototype]: g { [constructor]: [Circular] },
+                   listener: 
+                    { [Function: onend]
+                      [length]: 0,
+                      [name]: 'onend',
+                      [prototype]: onend { [constructor]: [Circular] } } },
+                 { [Function: socketOnEnd]
+                   [length]: 0,
+                   [name]: 'socketOnEnd',
+                   [prototype]: socketOnEnd { [constructor]: [Circular] } },
+                 [length]: 2 ],
+              finish: 
+               { [Function: onSocketFinish]
+                 [length]: 0,
+                 [name]: 'onSocketFinish',
+                 [prototype]: onSocketFinish { [constructor]: [Circular] } },
+              _socketEnd: 
+               { [Function: onSocketEnd]
+                 [length]: 0,
+                 [name]: 'onSocketEnd',
+                 [prototype]: onSocketEnd { [constructor]: [Circular] } },
+              drain: 
+               [ { [Function: ondrain]
+                   [length]: 0,
+                   [name]: 'ondrain',
+                   [prototype]: ondrain { [constructor]: [Circular] } },
+                 { [Function: socketOnDrain]
+                   [length]: 0,
+                   [name]: 'socketOnDrain',
+                   [prototype]: socketOnDrain { [constructor]: [Circular] } },
+                 [length]: 2 ],
+              timeout: 
+               { [Function]
+                 [length]: 0,
+                 [name]: '',
+                 [prototype]: { [constructor]: [Circular] } },
+              error: 
+               { [Function: socketOnError]
+                 [length]: 1,
+                 [name]: 'socketOnError',
+                 [prototype]: socketOnError { [constructor]: [Circular] } },
+              close: 
+               { [Function: serverSocketCloseListener]
+                 [length]: 0,
+                 [name]: 'serverSocketCloseListener',
+                 [prototype]: serverSocketCloseListener { [constructor]: [Circular] } },
+              data: 
+               { [Function: socketOnData]
+                 [length]: 1,
+                 [name]: 'socketOnData',
+                 [prototype]: socketOnData { [constructor]: [Circular] } },
+              resume: 
+               { [Function: onSocketResume]
+                 [length]: 0,
+                 [name]: 'onSocketResume',
+                 [prototype]: onSocketResume { [constructor]: [Circular] } },
+              pause: 
+               { [Function: onSocketPause]
+                 [length]: 0,
+                 [name]: 'onSocketPause',
+                 [prototype]: onSocketPause { [constructor]: [Circular] } } },
+           _eventsCount: 10,
+           _maxListeners: undefined,
+           _writableState: 
+            WritableState {
+              objectMode: false,
+              highWaterMark: 16384,
+              needDrain: false,
+              ending: false,
+              ended: false,
+              finished: false,
+              decodeStrings: false,
+              defaultEncoding: 'utf8',
+              length: 0,
+              writing: false,
+              corked: 0,
+              sync: true,
+              bufferProcessing: false,
+              onwrite: 
+               { [Function]
+                 [length]: 1,
+                 [name]: '',
+                 [prototype]: { [constructor]: [Circular] } },
+              writecb: null,
+              writelen: 0,
+              bufferedRequest: null,
+              lastBufferedRequest: null,
+              pendingcb: 0,
+              prefinished: false,
+              errorEmitted: false,
+              bufferedRequestCount: 0,
+              corkedRequestsFree: 
+               CorkedRequest {
+                 next: null,
+                 entry: null,
+                 finish: { [Function] [length]: 1, [name]: '' } } },
+           writable: true,
+           allowHalfOpen: true,
+           destroyed: false,
+           _bytesDispatched: 0,
+           _sockname: null,
+           _pendingData: null,
+           _pendingEncoding: '',
+           server: 
+            Server {
+              domain: null,
+              _events: 
+               { connection: 
+                  { [Function: connectionListener]
+                    [length]: 1,
+                    [name]: 'connectionListener',
+                    [prototype]: connectionListener { [constructor]: [Circular] } },
+                 close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+                 upgrade: 
+                  { [Function]
+                    [length]: 3,
+                    [name]: '',
+                    [arguments]: null,
+                    [caller]: null,
+                    [prototype]: { [constructor]: [Circular] } },
+                 request: 
+                  { [Function]
+                    [length]: 2,
+                    [name]: '',
+                    [arguments]: null,
+                    [caller]: null,
+                    [prototype]: { [constructor]: [Circular] } } },
+              _eventsCount: 4,
+              _maxListeners: undefined,
+              _connections: 5,
+              [connections]: [Getter/Setter],
+              _handle: 
+               TCP {
+                 bytesRead: 0,
+                 _externalStream: {},
+                 fd: -1,
+                 reading: false,
+                 owner: [Circular],
+                 onread: null,
+                 onconnection: 
+                  { [Function: onconnection]
+                    [length]: 2,
+                    [name]: 'onconnection',
+                    [prototype]: onconnection { [constructor]: [Circular] } },
+                 writeQueueSize: 0 },
+              _usingSlaves: false,
+              _slaves: [ [length]: 0 ],
+              _unref: false,
+              allowHalfOpen: true,
+              pauseOnConnect: false,
+              httpAllowHalfOpen: false,
+              timeout: 120000,
+              _pendingResponseData: 0,
+              _connectionKey: '6::::8080' },
+           _server: 
+            Server {
+              domain: null,
+              _events: 
+               { connection: 
+                  { [Function: connectionListener]
+                    [length]: 1,
+                    [name]: 'connectionListener',
+                    [prototype]: connectionListener { [constructor]: [Circular] } },
+                 close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+                 upgrade: 
+                  { [Function]
+                    [length]: 3,
+                    [name]: '',
+                    [arguments]: null,
+                    [caller]: null,
+                    [prototype]: { [constructor]: [Circular] } },
+                 request: 
+                  { [Function]
+                    [length]: 2,
+                    [name]: '',
+                    [arguments]: null,
+                    [caller]: null,
+                    [prototype]: { [constructor]: [Circular] } } },
+              _eventsCount: 4,
+              _maxListeners: undefined,
+              _connections: 5,
+              [connections]: [Getter/Setter],
+              _handle: 
+               TCP {
+                 bytesRead: 0,
+                 _externalStream: {},
+                 fd: -1,
+                 reading: false,
+                 owner: [Circular],
+                 onread: null,
+                 onconnection: 
+                  { [Function: onconnection]
+                    [length]: 2,
+                    [name]: 'onconnection',
+                    [prototype]: onconnection { [constructor]: [Circular] } },
+                 writeQueueSize: 0 },
+              _usingSlaves: false,
+              _slaves: [ [length]: 0 ],
+              _unref: false,
+              allowHalfOpen: true,
+              pauseOnConnect: false,
+              httpAllowHalfOpen: false,
+              timeout: 120000,
+              _pendingResponseData: 0,
+              _connectionKey: '6::::8080' },
+           _idleTimeout: 120000,
+           _idleNext: 
+            Socket {
+              connecting: false,
+              _hadError: false,
+              _handle: 
+               TCP {
+                 bytesRead: 0,
+                 _externalStream: {},
+                 fd: -1,
+                 reading: true,
+                 owner: [Circular],
+                 onread: 
+                  { [Function: onread]
+                    [length]: 2,
+                    [name]: 'onread',
+                    [prototype]: onread { [constructor]: [Circular] } },
+                 onconnection: null,
+                 writeQueueSize: 0 },
+              _parent: null,
+              _host: null,
+              _readableState: 
+               ReadableState {
+                 objectMode: false,
+                 highWaterMark: 16384,
+                 buffer: BufferList { head: null, tail: null, length: 0 },
+                 length: 0,
+                 pipes: null,
+                 pipesCount: 0,
+                 flowing: true,
+                 ended: false,
+                 endEmitted: false,
+                 reading: true,
+                 sync: false,
+                 needReadable: true,
+                 emittedReadable: false,
+                 readableListening: false,
+                 resumeScheduled: false,
+                 defaultEncoding: 'utf8',
+                 ranOut: false,
+                 awaitDrain: 0,
+                 readingMore: false,
+                 decoder: null,
+                 encoding: null },
+              readable: true,
+              domain: null,
+              _events: 
+               { end: 
+                  [ { [Function: g]
+                      [length]: 0,
+                      [name]: 'g',
+                      [prototype]: g { [constructor]: [Circular] },
+                      listener: 
+                       { [Function: onend]
+                         [length]: 0,
+                         [name]: 'onend',
+                         [prototype]: onend { [constructor]: [Circular] } } },
+                    { [Function: socketOnEnd]
+                      [length]: 0,
+                      [name]: 'socketOnEnd',
+                      [prototype]: socketOnEnd { [constructor]: [Circular] } },
+                    [length]: 2 ],
+                 finish: 
+                  { [Function: onSocketFinish]
+                    [length]: 0,
+                    [name]: 'onSocketFinish',
+                    [prototype]: onSocketFinish { [constructor]: [Circular] } },
+                 _socketEnd: 
+                  { [Function: onSocketEnd]
+                    [length]: 0,
+                    [name]: 'onSocketEnd',
+                    [prototype]: onSocketEnd { [constructor]: [Circular] } },
+                 drain: 
+                  [ { [Function: ondrain]
+                      [length]: 0,
+                      [name]: 'ondrain',
+                      [prototype]: ondrain { [constructor]: [Circular] } },
+                    { [Function: socketOnDrain]
+                      [length]: 0,
+                      [name]: 'socketOnDrain',
+                      [prototype]: socketOnDrain { [constructor]: [Circular] } },
+                    [length]: 2 ],
+                 timeout: 
+                  { [Function]
+                    [length]: 0,
+                    [name]: '',
+                    [prototype]: { [constructor]: [Circular] } },
+                 error: 
+                  { [Function: socketOnError]
+                    [length]: 1,
+                    [name]: 'socketOnError',
+                    [prototype]: socketOnError { [constructor]: [Circular] } },
+                 close: 
+                  { [Function: serverSocketCloseListener]
+                    [length]: 0,
+                    [name]: 'serverSocketCloseListener',
+                    [prototype]: serverSocketCloseListener { [constructor]: [Circular] } },
+                 data: 
+                  { [Function: socketOnData]
+                    [length]: 1,
+                    [name]: 'socketOnData',
+                    [prototype]: socketOnData { [constructor]: [Circular] } },
+                 resume: 
+                  { [Function: onSocketResume]
+                    [length]: 0,
+                    [name]: 'onSocketResume',
+                    [prototype]: onSocketResume { [constructor]: [Circular] } },
+                 pause: 
+                  { [Function: onSocketPause]
+                    [length]: 0,
+                    [name]: 'onSocketPause',
+                    [prototype]: onSocketPause { [constructor]: [Circular] } } },
+              _eventsCount: 10,
+              _maxListeners: undefined,
+              _writableState: 
+               WritableState {
+                 objectMode: false,
+                 highWaterMark: 16384,
+                 needDrain: false,
+                 ending: false,
+                 ended: false,
+                 finished: false,
+                 decodeStrings: false,
+                 defaultEncoding: 'utf8',
+                 length: 0,
+                 writing: false,
+                 corked: 0,
+                 sync: true,
+                 bufferProcessing: false,
+                 onwrite: 
+                  { [Function]
+                    [length]: 1,
+                    [name]: '',
+                    [prototype]: { [constructor]: [Circular] } },
+                 writecb: null,
+                 writelen: 0,
+                 bufferedRequest: null,
+                 lastBufferedRequest: null,
+                 pendingcb: 0,
+                 prefinished: false,
+                 errorEmitted: false,
+                 bufferedRequestCount: 0,
+                 corkedRequestsFree: 
+                  CorkedRequest {
+                    next: null,
+                    entry: null,
+                    finish: { [Function] [length]: 1, [name]: '' } } },
+              writable: true,
+              allowHalfOpen: true,
+              destroyed: false,
+              _bytesDispatched: 0,
+              _sockname: null,
+              _pendingData: null,
+              _pendingEncoding: '',
+              server: 
+               Server {
+                 domain: null,
+                 _events: 
+                  { connection: 
+                     { [Function: connectionListener]
+                       [length]: 1,
+                       [name]: 'connectionListener',
+                       [prototype]: connectionListener { [constructor]: [Circular] } },
+                    close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+                    upgrade: 
+                     { [Function]
+                       [length]: 3,
+                       [name]: '',
+                       [arguments]: null,
+                       [caller]: null,
+                       [prototype]: { [constructor]: [Circular] } },
+                    request: 
+                     { [Function]
+                       [length]: 2,
+                       [name]: '',
+                       [arguments]: null,
+                       [caller]: null,
+                       [prototype]: { [constructor]: [Circular] } } },
+                 _eventsCount: 4,
+                 _maxListeners: undefined,
+                 _connections: 5,
+                 [connections]: [Getter/Setter],
+                 _handle: 
+                  TCP {
+                    bytesRead: 0,
+                    _externalStream: {},
+                    fd: -1,
+                    reading: false,
+                    owner: [Circular],
+                    onread: null,
+                    onconnection: 
+                     { [Function: onconnection]
+                       [length]: 2,
+                       [name]: 'onconnection',
+                       [prototype]: onconnection { [constructor]: [Circular] } },
+                    writeQueueSize: 0 },
+                 _usingSlaves: false,
+                 _slaves: [ [length]: 0 ],
+                 _unref: false,
+                 allowHalfOpen: true,
+                 pauseOnConnect: false,
+                 httpAllowHalfOpen: false,
+                 timeout: 120000,
+                 _pendingResponseData: 0,
+                 _connectionKey: '6::::8080' },
+              _server: 
+               Server {
+                 domain: null,
+                 _events: 
+                  { connection: 
+                     { [Function: connectionListener]
+                       [length]: 1,
+                       [name]: 'connectionListener',
+                       [prototype]: connectionListener { [constructor]: [Circular] } },
+                    close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+                    upgrade: 
+                     { [Function]
+                       [length]: 3,
+                       [name]: '',
+                       [arguments]: null,
+                       [caller]: null,
+                       [prototype]: { [constructor]: [Circular] } },
+                    request: 
+                     { [Function]
+                       [length]: 2,
+                       [name]: '',
+                       [arguments]: null,
+                       [caller]: null,
+                       [prototype]: { [constructor]: [Circular] } } },
+                 _eventsCount: 4,
+                 _maxListeners: undefined,
+                 _connections: 5,
+                 [connections]: [Getter/Setter],
+                 _handle: 
+                  TCP {
+                    bytesRead: 0,
+                    _externalStream: {},
+                    fd: -1,
+                    reading: false,
+                    owner: [Circular],
+                    onread: null,
+                    onconnection: 
+                     { [Function: onconnection]
+                       [length]: 2,
+                       [name]: 'onconnection',
+                       [prototype]: onconnection { [constructor]: [Circular] } },
+                    writeQueueSize: 0 },
+                 _usingSlaves: false,
+                 _slaves: [ [length]: 0 ],
+                 _unref: false,
+                 allowHalfOpen: true,
+                 pauseOnConnect: false,
+                 httpAllowHalfOpen: false,
+                 timeout: 120000,
+                 _pendingResponseData: 0,
+                 _connectionKey: '6::::8080' },
+              _idleTimeout: 120000,
+              _idleNext: 
+               TimersList {
+                 _idleNext: [Circular],
+                 _idlePrev: [Circular],
+                 _timer: 
+                  Timer {
+                    '0': 
+                     { [Function: listOnTimeout]
+                       [length]: 0,
+                       [name]: 'listOnTimeout',
+                       [prototype]: listOnTimeout { [constructor]: [Circular] } },
+                    _list: [Circular] },
+                 _unrefed: true,
+                 msecs: 120000 },
+              _idlePrev: [Circular],
+              _idleStart: 5118,
+              parser: 
+               HTTPParser {
+                 '0': 
+                  { [Function: parserOnHeaders]
+                    [length]: 2,
+                    [name]: 'parserOnHeaders',
+                    [prototype]: parserOnHeaders { [constructor]: [Circular] } },
+                 '1': 
+                  { [Function: parserOnHeadersComplete]
+                    [length]: 9,
+                    [name]: 'parserOnHeadersComplete',
+                    [prototype]: parserOnHeadersComplete { [constructor]: [Circular] } },
+                 '2': 
+                  { [Function: parserOnBody]
+                    [length]: 3,
+                    [name]: 'parserOnBody',
+                    [prototype]: parserOnBody { [constructor]: [Circular] } },
+                 '3': 
+                  { [Function: parserOnMessageComplete]
+                    [length]: 0,
+                    [name]: 'parserOnMessageComplete',
+                    [prototype]: parserOnMessageComplete { [constructor]: [Circular] } },
+                 '4': 
+                  { [Function: onParserExecute]
+                    [length]: 2,
+                    [name]: 'onParserExecute',
+                    [prototype]: onParserExecute { [constructor]: [Circular] } },
+                 _headers: [ [length]: 0 ],
+                 _url: '',
+                 _consumed: true,
+                 socket: [Circular],
+                 incoming: null,
+                 outgoing: null,
+                 maxHeaderPairs: 2000,
+                 onIncoming: 
+                  { [Function: parserOnIncoming]
+                    [length]: 2,
+                    [name]: 'parserOnIncoming',
+                    [prototype]: parserOnIncoming { [constructor]: [Circular] } } },
+              on: 
+               { [Function: socketOnWrap]
+                 [length]: 2,
+                 [name]: 'socketOnWrap',
+                 [prototype]: socketOnWrap { [constructor]: [Circular] } },
+              _paused: false,
+              read: 
+               { [Function]
+                 [length]: 1,
+                 [name]: '',
+                 [prototype]: { [constructor]: [Circular] } },
+              _consuming: true,
+              [Symbol(bytesRead)]: 0 },
+           _idlePrev: [Circular],
+           _idleStart: 5118,
+           parser: 
+            HTTPParser {
+              '0': 
+               { [Function: parserOnHeaders]
+                 [length]: 2,
+                 [name]: 'parserOnHeaders',
+                 [prototype]: parserOnHeaders { [constructor]: [Circular] } },
+              '1': 
+               { [Function: parserOnHeadersComplete]
+                 [length]: 9,
+                 [name]: 'parserOnHeadersComplete',
+                 [prototype]: parserOnHeadersComplete { [constructor]: [Circular] } },
+              '2': 
+               { [Function: parserOnBody]
+                 [length]: 3,
+                 [name]: 'parserOnBody',
+                 [prototype]: parserOnBody { [constructor]: [Circular] } },
+              '3': 
+               { [Function: parserOnMessageComplete]
+                 [length]: 0,
+                 [name]: 'parserOnMessageComplete',
+                 [prototype]: parserOnMessageComplete { [constructor]: [Circular] } },
+              '4': 
+               { [Function: onParserExecute]
+                 [length]: 2,
+                 [name]: 'onParserExecute',
+                 [prototype]: onParserExecute { [constructor]: [Circular] } },
+              _headers: [ [length]: 0 ],
+              _url: '',
+              _consumed: true,
+              socket: [Circular],
+              incoming: null,
+              outgoing: null,
+              maxHeaderPairs: 2000,
+              onIncoming: 
+               { [Function: parserOnIncoming]
+                 [length]: 2,
+                 [name]: 'parserOnIncoming',
+                 [prototype]: parserOnIncoming { [constructor]: [Circular] } } },
+           on: 
+            { [Function: socketOnWrap]
+              [length]: 2,
+              [name]: 'socketOnWrap',
+              [prototype]: socketOnWrap { [constructor]: [Circular] } },
+           _paused: false,
+           read: 
+            { [Function]
+              [length]: 1,
+              [name]: '',
+              [prototype]: { [constructor]: [Circular] } },
+           _consuming: true,
+           [Symbol(bytesRead)]: 0 },
+        _idlePrev: [Circular],
+        _idleStart: 5118,
+        parser: 
+         HTTPParser {
+           '0': 
+            { [Function: parserOnHeaders]
+              [length]: 2,
+              [name]: 'parserOnHeaders',
+              [prototype]: parserOnHeaders { [constructor]: [Circular] } },
+           '1': 
+            { [Function: parserOnHeadersComplete]
+              [length]: 9,
+              [name]: 'parserOnHeadersComplete',
+              [prototype]: parserOnHeadersComplete { [constructor]: [Circular] } },
+           '2': 
+            { [Function: parserOnBody]
+              [length]: 3,
+              [name]: 'parserOnBody',
+              [prototype]: parserOnBody { [constructor]: [Circular] } },
+           '3': 
+            { [Function: parserOnMessageComplete]
+              [length]: 0,
+              [name]: 'parserOnMessageComplete',
+              [prototype]: parserOnMessageComplete { [constructor]: [Circular] } },
+           '4': 
+            { [Function: onParserExecute]
+              [length]: 2,
+              [name]: 'onParserExecute',
+              [prototype]: onParserExecute { [constructor]: [Circular] } },
+           _headers: [ [length]: 0 ],
+           _url: '',
+           _consumed: true,
+           socket: [Circular],
+           incoming: null,
+           outgoing: null,
+           maxHeaderPairs: 2000,
+           onIncoming: 
+            { [Function: parserOnIncoming]
+              [length]: 2,
+              [name]: 'parserOnIncoming',
+              [prototype]: parserOnIncoming { [constructor]: [Circular] } } },
+        on: 
+         { [Function: socketOnWrap]
+           [length]: 2,
+           [name]: 'socketOnWrap',
+           [prototype]: socketOnWrap { [constructor]: [Circular] } },
+        _paused: false,
+        read: 
+         { [Function]
+           [length]: 1,
+           [name]: '',
+           [prototype]: { [constructor]: [Circular] } },
+        _consuming: true,
+        [Symbol(bytesRead)]: 0 },
+     _idlePrev: [Circular],
+     _idleStart: 5118,
+     parser: 
+      HTTPParser {
+        '0': 
+         { [Function: parserOnHeaders]
+           [length]: 2,
+           [name]: 'parserOnHeaders',
+           [prototype]: parserOnHeaders { [constructor]: [Circular] } },
+        '1': 
+         { [Function: parserOnHeadersComplete]
+           [length]: 9,
+           [name]: 'parserOnHeadersComplete',
+           [prototype]: parserOnHeadersComplete { [constructor]: [Circular] } },
+        '2': 
+         { [Function: parserOnBody]
+           [length]: 3,
+           [name]: 'parserOnBody',
+           [prototype]: parserOnBody { [constructor]: [Circular] } },
+        '3': 
+         { [Function: parserOnMessageComplete]
+           [length]: 0,
+           [name]: 'parserOnMessageComplete',
+           [prototype]: parserOnMessageComplete { [constructor]: [Circular] } },
+        '4': 
+         { [Function: onParserExecute]
+           [length]: 2,
+           [name]: 'onParserExecute',
+           [prototype]: onParserExecute { [constructor]: [Circular] } },
+        _headers: [ [length]: 0 ],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: null,
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: 
+         { [Function: parserOnIncoming]
+           [length]: 2,
+           [name]: 'parserOnIncoming',
+           [prototype]: parserOnIncoming { [constructor]: [Circular] } } },
+     on: 
+      { [Function: socketOnWrap]
+        [length]: 2,
+        [name]: 'socketOnWrap',
+        [prototype]: socketOnWrap { [constructor]: [Circular] } },
+     _paused: false,
+     read: 
+      { [Function]
+        [length]: 1,
+        [name]: '',
+        [prototype]: { [constructor]: [Circular] } },
+     _consuming: true,
+     [Symbol(bytesRead)]: 0 },
+  _idlePrev: 
+   TimersList {
+     _idleNext: [Circular],
+     _idlePrev: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: 
+         TCP {
+           bytesRead: 0,
+           _externalStream: {},
+           fd: -1,
+           reading: true,
+           owner: [Circular],
+           onread: 
+            { [Function: onread]
+              [length]: 2,
+              [name]: 'onread',
+              [prototype]: onread { [constructor]: [Circular] } },
+           onconnection: null,
+           writeQueueSize: 0 },
+        _parent: null,
+        _host: null,
+        _readableState: 
+         ReadableState {
+           objectMode: false,
+           highWaterMark: 16384,
+           buffer: BufferList { head: null, tail: null, length: 0 },
+           length: 0,
+           pipes: null,
+           pipesCount: 0,
+           flowing: true,
+           ended: false,
+           endEmitted: false,
+           reading: true,
+           sync: false,
+           needReadable: true,
+           emittedReadable: false,
+           readableListening: false,
+           resumeScheduled: false,
+           defaultEncoding: 'utf8',
+           ranOut: false,
+           awaitDrain: 0,
+           readingMore: false,
+           decoder: null,
+           encoding: null },
+        readable: true,
+        domain: null,
+        _events: 
+         { end: 
+            [ { [Function: g]
+                [length]: 0,
+                [name]: 'g',
+                [prototype]: g { [constructor]: [Circular] },
+                listener: 
+                 { [Function: onend]
+                   [length]: 0,
+                   [name]: 'onend',
+                   [prototype]: onend { [constructor]: [Circular] } } },
+              { [Function: socketOnEnd]
+                [length]: 0,
+                [name]: 'socketOnEnd',
+                [prototype]: socketOnEnd { [constructor]: [Circular] } },
+              [length]: 2 ],
+           finish: 
+            { [Function: onSocketFinish]
+              [length]: 0,
+              [name]: 'onSocketFinish',
+              [prototype]: onSocketFinish { [constructor]: [Circular] } },
+           _socketEnd: 
+            { [Function: onSocketEnd]
+              [length]: 0,
+              [name]: 'onSocketEnd',
+              [prototype]: onSocketEnd { [constructor]: [Circular] } },
+           drain: 
+            [ { [Function: ondrain]
+                [length]: 0,
+                [name]: 'ondrain',
+                [prototype]: ondrain { [constructor]: [Circular] } },
+              { [Function: socketOnDrain]
+                [length]: 0,
+                [name]: 'socketOnDrain',
+                [prototype]: socketOnDrain { [constructor]: [Circular] } },
+              [length]: 2 ],
+           timeout: 
+            { [Function]
+              [length]: 0,
+              [name]: '',
+              [prototype]: { [constructor]: [Circular] } },
+           error: 
+            { [Function: socketOnError]
+              [length]: 1,
+              [name]: 'socketOnError',
+              [prototype]: socketOnError { [constructor]: [Circular] } },
+           close: 
+            { [Function: serverSocketCloseListener]
+              [length]: 0,
+              [name]: 'serverSocketCloseListener',
+              [prototype]: serverSocketCloseListener { [constructor]: [Circular] } },
+           data: 
+            { [Function: socketOnData]
+              [length]: 1,
+              [name]: 'socketOnData',
+              [prototype]: socketOnData { [constructor]: [Circular] } },
+           resume: 
+            { [Function: onSocketResume]
+              [length]: 0,
+              [name]: 'onSocketResume',
+              [prototype]: onSocketResume { [constructor]: [Circular] } },
+           pause: 
+            { [Function: onSocketPause]
+              [length]: 0,
+              [name]: 'onSocketPause',
+              [prototype]: onSocketPause { [constructor]: [Circular] } } },
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: 
+         WritableState {
+           objectMode: false,
+           highWaterMark: 16384,
+           needDrain: false,
+           ending: false,
+           ended: false,
+           finished: false,
+           decodeStrings: false,
+           defaultEncoding: 'utf8',
+           length: 0,
+           writing: false,
+           corked: 0,
+           sync: true,
+           bufferProcessing: false,
+           onwrite: 
+            { [Function]
+              [length]: 1,
+              [name]: '',
+              [prototype]: { [constructor]: [Circular] } },
+           writecb: null,
+           writelen: 0,
+           bufferedRequest: null,
+           lastBufferedRequest: null,
+           pendingcb: 0,
+           prefinished: false,
+           errorEmitted: false,
+           bufferedRequestCount: 0,
+           corkedRequestsFree: 
+            CorkedRequest {
+              next: null,
+              entry: null,
+              finish: { [Function] [length]: 1, [name]: '' } } },
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 0,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: 
+         Server {
+           domain: null,
+           _events: 
+            { connection: 
+               { [Function: connectionListener]
+                 [length]: 1,
+                 [name]: 'connectionListener',
+                 [prototype]: connectionListener { [constructor]: [Circular] } },
+              close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+              upgrade: 
+               { [Function]
+                 [length]: 3,
+                 [name]: '',
+                 [arguments]: null,
+                 [caller]: null,
+                 [prototype]: { [constructor]: [Circular] } },
+              request: 
+               { [Function]
+                 [length]: 2,
+                 [name]: '',
+                 [arguments]: null,
+                 [caller]: null,
+                 [prototype]: { [constructor]: [Circular] } } },
+           _eventsCount: 4,
+           _maxListeners: undefined,
+           _connections: 5,
+           [connections]: [Getter/Setter],
+           _handle: 
+            TCP {
+              bytesRead: 0,
+              _externalStream: {},
+              fd: -1,
+              reading: false,
+              owner: [Circular],
+              onread: null,
+              onconnection: 
+               { [Function: onconnection]
+                 [length]: 2,
+                 [name]: 'onconnection',
+                 [prototype]: onconnection { [constructor]: [Circular] } },
+              writeQueueSize: 0 },
+           _usingSlaves: false,
+           _slaves: [ [length]: 0 ],
+           _unref: false,
+           allowHalfOpen: true,
+           pauseOnConnect: false,
+           httpAllowHalfOpen: false,
+           timeout: 120000,
+           _pendingResponseData: 0,
+           _connectionKey: '6::::8080' },
+        _server: 
+         Server {
+           domain: null,
+           _events: 
+            { connection: 
+               { [Function: connectionListener]
+                 [length]: 1,
+                 [name]: 'connectionListener',
+                 [prototype]: connectionListener { [constructor]: [Circular] } },
+              close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+              upgrade: 
+               { [Function]
+                 [length]: 3,
+                 [name]: '',
+                 [arguments]: null,
+                 [caller]: null,
+                 [prototype]: { [constructor]: [Circular] } },
+              request: 
+               { [Function]
+                 [length]: 2,
+                 [name]: '',
+                 [arguments]: null,
+                 [caller]: null,
+                 [prototype]: { [constructor]: [Circular] } } },
+           _eventsCount: 4,
+           _maxListeners: undefined,
+           _connections: 5,
+           [connections]: [Getter/Setter],
+           _handle: 
+            TCP {
+              bytesRead: 0,
+              _externalStream: {},
+              fd: -1,
+              reading: false,
+              owner: [Circular],
+              onread: null,
+              onconnection: 
+               { [Function: onconnection]
+                 [length]: 2,
+                 [name]: 'onconnection',
+                 [prototype]: onconnection { [constructor]: [Circular] } },
+              writeQueueSize: 0 },
+           _usingSlaves: false,
+           _slaves: [ [length]: 0 ],
+           _unref: false,
+           allowHalfOpen: true,
+           pauseOnConnect: false,
+           httpAllowHalfOpen: false,
+           timeout: 120000,
+           _pendingResponseData: 0,
+           _connectionKey: '6::::8080' },
+        _idleTimeout: 120000,
+        _idleNext: [Circular],
+        _idlePrev: 
+         Socket {
+           connecting: false,
+           _hadError: false,
+           _handle: 
+            TCP {
+              bytesRead: 0,
+              _externalStream: {},
+              fd: -1,
+              reading: true,
+              owner: [Circular],
+              onread: 
+               { [Function: onread]
+                 [length]: 2,
+                 [name]: 'onread',
+                 [prototype]: onread { [constructor]: [Circular] } },
+              onconnection: null,
+              writeQueueSize: 0 },
+           _parent: null,
+           _host: null,
+           _readableState: 
+            ReadableState {
+              objectMode: false,
+              highWaterMark: 16384,
+              buffer: BufferList { head: null, tail: null, length: 0 },
+              length: 0,
+              pipes: null,
+              pipesCount: 0,
+              flowing: true,
+              ended: false,
+              endEmitted: false,
+              reading: true,
+              sync: false,
+              needReadable: true,
+              emittedReadable: false,
+              readableListening: false,
+              resumeScheduled: false,
+              defaultEncoding: 'utf8',
+              ranOut: false,
+              awaitDrain: 0,
+              readingMore: false,
+              decoder: null,
+              encoding: null },
+           readable: true,
+           domain: null,
+           _events: 
+            { end: 
+               [ { [Function: g]
+                   [length]: 0,
+                   [name]: 'g',
+                   [prototype]: g { [constructor]: [Circular] },
+                   listener: 
+                    { [Function: onend]
+                      [length]: 0,
+                      [name]: 'onend',
+                      [prototype]: onend { [constructor]: [Circular] } } },
+                 { [Function: socketOnEnd]
+                   [length]: 0,
+                   [name]: 'socketOnEnd',
+                   [prototype]: socketOnEnd { [constructor]: [Circular] } },
+                 [length]: 2 ],
+              finish: 
+               { [Function: onSocketFinish]
+                 [length]: 0,
+                 [name]: 'onSocketFinish',
+                 [prototype]: onSocketFinish { [constructor]: [Circular] } },
+              _socketEnd: 
+               { [Function: onSocketEnd]
+                 [length]: 0,
+                 [name]: 'onSocketEnd',
+                 [prototype]: onSocketEnd { [constructor]: [Circular] } },
+              drain: 
+               [ { [Function: ondrain]
+                   [length]: 0,
+                   [name]: 'ondrain',
+                   [prototype]: ondrain { [constructor]: [Circular] } },
+                 { [Function: socketOnDrain]
+                   [length]: 0,
+                   [name]: 'socketOnDrain',
+                   [prototype]: socketOnDrain { [constructor]: [Circular] } },
+                 [length]: 2 ],
+              timeout: 
+               { [Function]
+                 [length]: 0,
+                 [name]: '',
+                 [prototype]: { [constructor]: [Circular] } },
+              error: 
+               { [Function: socketOnError]
+                 [length]: 1,
+                 [name]: 'socketOnError',
+                 [prototype]: socketOnError { [constructor]: [Circular] } },
+              close: 
+               { [Function: serverSocketCloseListener]
+                 [length]: 0,
+                 [name]: 'serverSocketCloseListener',
+                 [prototype]: serverSocketCloseListener { [constructor]: [Circular] } },
+              data: 
+               { [Function: socketOnData]
+                 [length]: 1,
+                 [name]: 'socketOnData',
+                 [prototype]: socketOnData { [constructor]: [Circular] } },
+              resume: 
+               { [Function: onSocketResume]
+                 [length]: 0,
+                 [name]: 'onSocketResume',
+                 [prototype]: onSocketResume { [constructor]: [Circular] } },
+              pause: 
+               { [Function: onSocketPause]
+                 [length]: 0,
+                 [name]: 'onSocketPause',
+                 [prototype]: onSocketPause { [constructor]: [Circular] } } },
+           _eventsCount: 10,
+           _maxListeners: undefined,
+           _writableState: 
+            WritableState {
+              objectMode: false,
+              highWaterMark: 16384,
+              needDrain: false,
+              ending: false,
+              ended: false,
+              finished: false,
+              decodeStrings: false,
+              defaultEncoding: 'utf8',
+              length: 0,
+              writing: false,
+              corked: 0,
+              sync: true,
+              bufferProcessing: false,
+              onwrite: 
+               { [Function]
+                 [length]: 1,
+                 [name]: '',
+                 [prototype]: { [constructor]: [Circular] } },
+              writecb: null,
+              writelen: 0,
+              bufferedRequest: null,
+              lastBufferedRequest: null,
+              pendingcb: 0,
+              prefinished: false,
+              errorEmitted: false,
+              bufferedRequestCount: 0,
+              corkedRequestsFree: 
+               CorkedRequest {
+                 next: null,
+                 entry: null,
+                 finish: { [Function] [length]: 1, [name]: '' } } },
+           writable: true,
+           allowHalfOpen: true,
+           destroyed: false,
+           _bytesDispatched: 0,
+           _sockname: null,
+           _pendingData: null,
+           _pendingEncoding: '',
+           server: 
+            Server {
+              domain: null,
+              _events: 
+               { connection: 
+                  { [Function: connectionListener]
+                    [length]: 1,
+                    [name]: 'connectionListener',
+                    [prototype]: connectionListener { [constructor]: [Circular] } },
+                 close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+                 upgrade: 
+                  { [Function]
+                    [length]: 3,
+                    [name]: '',
+                    [arguments]: null,
+                    [caller]: null,
+                    [prototype]: { [constructor]: [Circular] } },
+                 request: 
+                  { [Function]
+                    [length]: 2,
+                    [name]: '',
+                    [arguments]: null,
+                    [caller]: null,
+                    [prototype]: { [constructor]: [Circular] } } },
+              _eventsCount: 4,
+              _maxListeners: undefined,
+              _connections: 5,
+              [connections]: [Getter/Setter],
+              _handle: 
+               TCP {
+                 bytesRead: 0,
+                 _externalStream: {},
+                 fd: -1,
+                 reading: false,
+                 owner: [Circular],
+                 onread: null,
+                 onconnection: 
+                  { [Function: onconnection]
+                    [length]: 2,
+                    [name]: 'onconnection',
+                    [prototype]: onconnection { [constructor]: [Circular] } },
+                 writeQueueSize: 0 },
+              _usingSlaves: false,
+              _slaves: [ [length]: 0 ],
+              _unref: false,
+              allowHalfOpen: true,
+              pauseOnConnect: false,
+              httpAllowHalfOpen: false,
+              timeout: 120000,
+              _pendingResponseData: 0,
+              _connectionKey: '6::::8080' },
+           _server: 
+            Server {
+              domain: null,
+              _events: 
+               { connection: 
+                  { [Function: connectionListener]
+                    [length]: 1,
+                    [name]: 'connectionListener',
+                    [prototype]: connectionListener { [constructor]: [Circular] } },
+                 close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+                 upgrade: 
+                  { [Function]
+                    [length]: 3,
+                    [name]: '',
+                    [arguments]: null,
+                    [caller]: null,
+                    [prototype]: { [constructor]: [Circular] } },
+                 request: 
+                  { [Function]
+                    [length]: 2,
+                    [name]: '',
+                    [arguments]: null,
+                    [caller]: null,
+                    [prototype]: { [constructor]: [Circular] } } },
+              _eventsCount: 4,
+              _maxListeners: undefined,
+              _connections: 5,
+              [connections]: [Getter/Setter],
+              _handle: 
+               TCP {
+                 bytesRead: 0,
+                 _externalStream: {},
+                 fd: -1,
+                 reading: false,
+                 owner: [Circular],
+                 onread: null,
+                 onconnection: 
+                  { [Function: onconnection]
+                    [length]: 2,
+                    [name]: 'onconnection',
+                    [prototype]: onconnection { [constructor]: [Circular] } },
+                 writeQueueSize: 0 },
+              _usingSlaves: false,
+              _slaves: [ [length]: 0 ],
+              _unref: false,
+              allowHalfOpen: true,
+              pauseOnConnect: false,
+              httpAllowHalfOpen: false,
+              timeout: 120000,
+              _pendingResponseData: 0,
+              _connectionKey: '6::::8080' },
+           _idleTimeout: 120000,
+           _idleNext: [Circular],
+           _idlePrev: 
+            Socket {
+              connecting: false,
+              _hadError: false,
+              _handle: 
+               TCP {
+                 bytesRead: 0,
+                 _externalStream: {},
+                 fd: -1,
+                 reading: true,
+                 owner: [Circular],
+                 onread: 
+                  { [Function: onread]
+                    [length]: 2,
+                    [name]: 'onread',
+                    [prototype]: onread { [constructor]: [Circular] } },
+                 onconnection: null,
+                 writeQueueSize: 0 },
+              _parent: null,
+              _host: null,
+              _readableState: 
+               ReadableState {
+                 objectMode: false,
+                 highWaterMark: 16384,
+                 buffer: BufferList { head: null, tail: null, length: 0 },
+                 length: 0,
+                 pipes: null,
+                 pipesCount: 0,
+                 flowing: true,
+                 ended: false,
+                 endEmitted: false,
+                 reading: true,
+                 sync: false,
+                 needReadable: true,
+                 emittedReadable: false,
+                 readableListening: false,
+                 resumeScheduled: false,
+                 defaultEncoding: 'utf8',
+                 ranOut: false,
+                 awaitDrain: 0,
+                 readingMore: false,
+                 decoder: null,
+                 encoding: null },
+              readable: true,
+              domain: null,
+              _events: 
+               { end: 
+                  [ { [Function: g]
+                      [length]: 0,
+                      [name]: 'g',
+                      [prototype]: g { [constructor]: [Circular] },
+                      listener: 
+                       { [Function: onend]
+                         [length]: 0,
+                         [name]: 'onend',
+                         [prototype]: onend { [constructor]: [Circular] } } },
+                    { [Function: socketOnEnd]
+                      [length]: 0,
+                      [name]: 'socketOnEnd',
+                      [prototype]: socketOnEnd { [constructor]: [Circular] } },
+                    [length]: 2 ],
+                 finish: 
+                  { [Function: onSocketFinish]
+                    [length]: 0,
+                    [name]: 'onSocketFinish',
+                    [prototype]: onSocketFinish { [constructor]: [Circular] } },
+                 _socketEnd: 
+                  { [Function: onSocketEnd]
+                    [length]: 0,
+                    [name]: 'onSocketEnd',
+                    [prototype]: onSocketEnd { [constructor]: [Circular] } },
+                 drain: 
+                  [ { [Function: ondrain]
+                      [length]: 0,
+                      [name]: 'ondrain',
+                      [prototype]: ondrain { [constructor]: [Circular] } },
+                    { [Function: socketOnDrain]
+                      [length]: 0,
+                      [name]: 'socketOnDrain',
+                      [prototype]: socketOnDrain { [constructor]: [Circular] } },
+                    [length]: 2 ],
+                 timeout: 
+                  { [Function]
+                    [length]: 0,
+                    [name]: '',
+                    [prototype]: { [constructor]: [Circular] } },
+                 error: 
+                  { [Function: socketOnError]
+                    [length]: 1,
+                    [name]: 'socketOnError',
+                    [prototype]: socketOnError { [constructor]: [Circular] } },
+                 close: 
+                  { [Function: serverSocketCloseListener]
+                    [length]: 0,
+                    [name]: 'serverSocketCloseListener',
+                    [prototype]: serverSocketCloseListener { [constructor]: [Circular] } },
+                 data: 
+                  { [Function: socketOnData]
+                    [length]: 1,
+                    [name]: 'socketOnData',
+                    [prototype]: socketOnData { [constructor]: [Circular] } },
+                 resume: 
+                  { [Function: onSocketResume]
+                    [length]: 0,
+                    [name]: 'onSocketResume',
+                    [prototype]: onSocketResume { [constructor]: [Circular] } },
+                 pause: 
+                  { [Function: onSocketPause]
+                    [length]: 0,
+                    [name]: 'onSocketPause',
+                    [prototype]: onSocketPause { [constructor]: [Circular] } } },
+              _eventsCount: 10,
+              _maxListeners: undefined,
+              _writableState: 
+               WritableState {
+                 objectMode: false,
+                 highWaterMark: 16384,
+                 needDrain: false,
+                 ending: false,
+                 ended: false,
+                 finished: false,
+                 decodeStrings: false,
+                 defaultEncoding: 'utf8',
+                 length: 0,
+                 writing: false,
+                 corked: 0,
+                 sync: true,
+                 bufferProcessing: false,
+                 onwrite: 
+                  { [Function]
+                    [length]: 1,
+                    [name]: '',
+                    [prototype]: { [constructor]: [Circular] } },
+                 writecb: null,
+                 writelen: 0,
+                 bufferedRequest: null,
+                 lastBufferedRequest: null,
+                 pendingcb: 0,
+                 prefinished: false,
+                 errorEmitted: false,
+                 bufferedRequestCount: 0,
+                 corkedRequestsFree: 
+                  CorkedRequest {
+                    next: null,
+                    entry: null,
+                    finish: { [Function] [length]: 1, [name]: '' } } },
+              writable: true,
+              allowHalfOpen: true,
+              destroyed: false,
+              _bytesDispatched: 0,
+              _sockname: null,
+              _pendingData: null,
+              _pendingEncoding: '',
+              server: 
+               Server {
+                 domain: null,
+                 _events: 
+                  { connection: 
+                     { [Function: connectionListener]
+                       [length]: 1,
+                       [name]: 'connectionListener',
+                       [prototype]: connectionListener { [constructor]: [Circular] } },
+                    close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+                    upgrade: 
+                     { [Function]
+                       [length]: 3,
+                       [name]: '',
+                       [arguments]: null,
+                       [caller]: null,
+                       [prototype]: { [constructor]: [Circular] } },
+                    request: 
+                     { [Function]
+                       [length]: 2,
+                       [name]: '',
+                       [arguments]: null,
+                       [caller]: null,
+                       [prototype]: { [constructor]: [Circular] } } },
+                 _eventsCount: 4,
+                 _maxListeners: undefined,
+                 _connections: 5,
+                 [connections]: [Getter/Setter],
+                 _handle: 
+                  TCP {
+                    bytesRead: 0,
+                    _externalStream: {},
+                    fd: -1,
+                    reading: false,
+                    owner: [Circular],
+                    onread: null,
+                    onconnection: 
+                     { [Function: onconnection]
+                       [length]: 2,
+                       [name]: 'onconnection',
+                       [prototype]: onconnection { [constructor]: [Circular] } },
+                    writeQueueSize: 0 },
+                 _usingSlaves: false,
+                 _slaves: [ [length]: 0 ],
+                 _unref: false,
+                 allowHalfOpen: true,
+                 pauseOnConnect: false,
+                 httpAllowHalfOpen: false,
+                 timeout: 120000,
+                 _pendingResponseData: 0,
+                 _connectionKey: '6::::8080' },
+              _server: 
+               Server {
+                 domain: null,
+                 _events: 
+                  { connection: 
+                     { [Function: connectionListener]
+                       [length]: 1,
+                       [name]: 'connectionListener',
+                       [prototype]: connectionListener { [constructor]: [Circular] } },
+                    close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+                    upgrade: 
+                     { [Function]
+                       [length]: 3,
+                       [name]: '',
+                       [arguments]: null,
+                       [caller]: null,
+                       [prototype]: { [constructor]: [Circular] } },
+                    request: 
+                     { [Function]
+                       [length]: 2,
+                       [name]: '',
+                       [arguments]: null,
+                       [caller]: null,
+                       [prototype]: { [constructor]: [Circular] } } },
+                 _eventsCount: 4,
+                 _maxListeners: undefined,
+                 _connections: 5,
+                 [connections]: [Getter/Setter],
+                 _handle: 
+                  TCP {
+                    bytesRead: 0,
+                    _externalStream: {},
+                    fd: -1,
+                    reading: false,
+                    owner: [Circular],
+                    onread: null,
+                    onconnection: 
+                     { [Function: onconnection]
+                       [length]: 2,
+                       [name]: 'onconnection',
+                       [prototype]: onconnection { [constructor]: [Circular] } },
+                    writeQueueSize: 0 },
+                 _usingSlaves: false,
+                 _slaves: [ [length]: 0 ],
+                 _unref: false,
+                 allowHalfOpen: true,
+                 pauseOnConnect: false,
+                 httpAllowHalfOpen: false,
+                 timeout: 120000,
+                 _pendingResponseData: 0,
+                 _connectionKey: '6::::8080' },
+              _idleTimeout: 120000,
+              _idleNext: [Circular],
+              _idlePrev: 
+               Socket {
+                 connecting: false,
+                 _hadError: false,
+                 _handle: 
+                  TCP {
+                    bytesRead: 0,
+                    _externalStream: {},
+                    fd: -1,
+                    reading: true,
+                    owner: [Circular],
+                    onread: 
+                     { [Function: onread]
+                       [length]: 2,
+                       [name]: 'onread',
+                       [prototype]: onread { [constructor]: [Circular] } },
+                    onconnection: null,
+                    writeQueueSize: 0 },
+                 _parent: null,
+                 _host: null,
+                 _readableState: 
+                  ReadableState {
+                    objectMode: false,
+                    highWaterMark: 16384,
+                    buffer: BufferList { head: null, tail: null, length: 0 },
+                    length: 0,
+                    pipes: null,
+                    pipesCount: 0,
+                    flowing: true,
+                    ended: false,
+                    endEmitted: false,
+                    reading: true,
+                    sync: false,
+                    needReadable: true,
+                    emittedReadable: false,
+                    readableListening: false,
+                    resumeScheduled: false,
+                    defaultEncoding: 'utf8',
+                    ranOut: false,
+                    awaitDrain: 0,
+                    readingMore: false,
+                    decoder: null,
+                    encoding: null },
+                 readable: true,
+                 domain: null,
+                 _events: 
+                  { end: 
+                     [ { [Function: g]
+                         [length]: 0,
+                         [name]: 'g',
+                         [prototype]: g { [constructor]: [Circular] },
+                         listener: 
+                          { [Function: onend]
+                            [length]: 0,
+                            [name]: 'onend',
+                            [prototype]: onend { [constructor]: [Circular] } } },
+                       { [Function: socketOnEnd]
+                         [length]: 0,
+                         [name]: 'socketOnEnd',
+                         [prototype]: socketOnEnd { [constructor]: [Circular] } },
+                       [length]: 2 ],
+                    finish: 
+                     { [Function: onSocketFinish]
+                       [length]: 0,
+                       [name]: 'onSocketFinish',
+                       [prototype]: onSocketFinish { [constructor]: [Circular] } },
+                    _socketEnd: 
+                     { [Function: onSocketEnd]
+                       [length]: 0,
+                       [name]: 'onSocketEnd',
+                       [prototype]: onSocketEnd { [constructor]: [Circular] } },
+                    drain: 
+                     [ { [Function: ondrain]
+                         [length]: 0,
+                         [name]: 'ondrain',
+                         [prototype]: ondrain { [constructor]: [Circular] } },
+                       { [Function: socketOnDrain]
+                         [length]: 0,
+                         [name]: 'socketOnDrain',
+                         [prototype]: socketOnDrain { [constructor]: [Circular] } },
+                       [length]: 2 ],
+                    timeout: 
+                     { [Function]
+                       [length]: 0,
+                       [name]: '',
+                       [prototype]: { [constructor]: [Circular] } },
+                    error: 
+                     { [Function: socketOnError]
+                       [length]: 1,
+                       [name]: 'socketOnError',
+                       [prototype]: socketOnError { [constructor]: [Circular] } },
+                    close: 
+                     { [Function: serverSocketCloseListener]
+                       [length]: 0,
+                       [name]: 'serverSocketCloseListener',
+                       [prototype]: serverSocketCloseListener { [constructor]: [Circular] } },
+                    data: 
+                     { [Function: socketOnData]
+                       [length]: 1,
+                       [name]: 'socketOnData',
+                       [prototype]: socketOnData { [constructor]: [Circular] } },
+                    resume: 
+                     { [Function: onSocketResume]
+                       [length]: 0,
+                       [name]: 'onSocketResume',
+                       [prototype]: onSocketResume { [constructor]: [Circular] } },
+                    pause: 
+                     { [Function: onSocketPause]
+                       [length]: 0,
+                       [name]: 'onSocketPause',
+                       [prototype]: onSocketPause { [constructor]: [Circular] } } },
+                 _eventsCount: 10,
+                 _maxListeners: undefined,
+                 _writableState: 
+                  WritableState {
+                    objectMode: false,
+                    highWaterMark: 16384,
+                    needDrain: false,
+                    ending: false,
+                    ended: false,
+                    finished: false,
+                    decodeStrings: false,
+                    defaultEncoding: 'utf8',
+                    length: 0,
+                    writing: false,
+                    corked: 0,
+                    sync: true,
+                    bufferProcessing: false,
+                    onwrite: 
+                     { [Function]
+                       [length]: 1,
+                       [name]: '',
+                       [prototype]: { [constructor]: [Circular] } },
+                    writecb: null,
+                    writelen: 0,
+                    bufferedRequest: null,
+                    lastBufferedRequest: null,
+                    pendingcb: 0,
+                    prefinished: false,
+                    errorEmitted: false,
+                    bufferedRequestCount: 0,
+                    corkedRequestsFree: 
+                     CorkedRequest {
+                       next: null,
+                       entry: null,
+                       finish: { [Function] [length]: 1, [name]: '' } } },
+                 writable: true,
+                 allowHalfOpen: true,
+                 destroyed: false,
+                 _bytesDispatched: 0,
+                 _sockname: null,
+                 _pendingData: null,
+                 _pendingEncoding: '',
+                 server: 
+                  Server {
+                    domain: null,
+                    _events: 
+                     { connection: 
+                        { [Function: connectionListener]
+                          [length]: 1,
+                          [name]: 'connectionListener',
+                          [prototype]: connectionListener { [constructor]: [Circular] } },
+                       close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+                       upgrade: 
+                        { [Function]
+                          [length]: 3,
+                          [name]: '',
+                          [arguments]: null,
+                          [caller]: null,
+                          [prototype]: { [constructor]: [Circular] } },
+                       request: 
+                        { [Function]
+                          [length]: 2,
+                          [name]: '',
+                          [arguments]: null,
+                          [caller]: null,
+                          [prototype]: { [constructor]: [Circular] } } },
+                    _eventsCount: 4,
+                    _maxListeners: undefined,
+                    _connections: 5,
+                    [connections]: [Getter/Setter],
+                    _handle: 
+                     TCP {
+                       bytesRead: 0,
+                       _externalStream: {},
+                       fd: -1,
+                       reading: false,
+                       owner: [Circular],
+                       onread: null,
+                       onconnection: 
+                        { [Function: onconnection]
+                          [length]: 2,
+                          [name]: 'onconnection',
+                          [prototype]: onconnection { [constructor]: [Circular] } },
+                       writeQueueSize: 0 },
+                    _usingSlaves: false,
+                    _slaves: [ [length]: 0 ],
+                    _unref: false,
+                    allowHalfOpen: true,
+                    pauseOnConnect: false,
+                    httpAllowHalfOpen: false,
+                    timeout: 120000,
+                    _pendingResponseData: 0,
+                    _connectionKey: '6::::8080' },
+                 _server: 
+                  Server {
+                    domain: null,
+                    _events: 
+                     { connection: 
+                        { [Function: connectionListener]
+                          [length]: 1,
+                          [name]: 'connectionListener',
+                          [prototype]: connectionListener { [constructor]: [Circular] } },
+                       close: { [Function: bound ] [length]: 0, [name]: 'bound ' },
+                       upgrade: 
+                        { [Function]
+                          [length]: 3,
+                          [name]: '',
+                          [arguments]: null,
+                          [caller]: null,
+                          [prototype]: { [constructor]: [Circular] } },
+                       request: 
+                        { [Function]
+                          [length]: 2,
+                          [name]: '',
+                          [arguments]: null,
+                          [caller]: null,
+                          [prototype]: { [constructor]: [Circular] } } },
+                    _eventsCount: 4,
+                    _maxListeners: undefined,
+                    _connections: 5,
+                    [connections]: [Getter/Setter],
+                    _handle: 
+                     TCP {
+                       bytesRead: 0,
+                       _externalStream: {},
+                       fd: -1,
+                       reading: false,
+                       owner: [Circular],
+                       onread: null,
+                       onconnection: 
+                        { [Function: onconnection]
+                          [length]: 2,
+                          [name]: 'onconnection',
+                          [prototype]: onconnection { [constructor]: [Circular] } },
+                       writeQueueSize: 0 },
+                    _usingSlaves: false,
+                    _slaves: [ [length]: 0 ],
+                    _unref: false,
+                    allowHalfOpen: true,
+                    pauseOnConnect: false,
+                    httpAllowHalfOpen: false,
+                    timeout: 120000,
+                    _pendingResponseData: 0,
+                    _connectionKey: '6::::8080' },
+                 _idleTimeout: 120000,
+                 _idleNext: [Circular],
+                 _idlePrev: [Circular],
+                 _idleStart: 5118,
+                 parser: 
+                  HTTPParser {
+                    '0': 
+                     { [Function: parserOnHeaders]
+                       [length]: 2,
+                       [name]: 'parserOnHeaders',
+                       [prototype]: parserOnHeaders { [constructor]: [Circular] } },
+                    '1': 
+                     { [Function: parserOnHeadersComplete]
+                       [length]: 9,
+                       [name]: 'parserOnHeadersComplete',
+                       [prototype]: parserOnHeadersComplete { [constructor]: [Circular] } },
+                    '2': 
+                     { [Function: parserOnBody]
+                       [length]: 3,
+                       [name]: 'parserOnBody',
+                       [prototype]: parserOnBody { [constructor]: [Circular] } },
+                    '3': 
+                     { [Function: parserOnMessageComplete]
+                       [length]: 0,
+                       [name]: 'parserOnMessageComplete',
+                       [prototype]: parserOnMessageComplete { [constructor]: [Circular] } },
+                    '4': 
+                     { [Function: onParserExecute]
+                       [length]: 2,
+                       [name]: 'onParserExecute',
+                       [prototype]: onParserExecute { [constructor]: [Circular] } },
+                    _headers: [ [length]: 0 ],
+                    _url: '',
+                    _consumed: true,
+                    socket: [Circular],
+                    incoming: null,
+                    outgoing: null,
+                    maxHeaderPairs: 2000,
+                    onIncoming: 
+                     { [Function: parserOnIncoming]
+                       [length]: 2,
+                       [name]: 'parserOnIncoming',
+                       [prototype]: parserOnIncoming { [constructor]: [Circular] } } },
+                 on: 
+                  { [Function: socketOnWrap]
+                    [length]: 2,
+                    [name]: 'socketOnWrap',
+                    [prototype]: socketOnWrap { [constructor]: [Circular] } },
+                 _paused: false,
+                 read: 
+                  { [Function]
+                    [length]: 1,
+                    [name]: '',
+                    [prototype]: { [constructor]: [Circular] } },
+                 _consuming: true,
+                 [Symbol(bytesRead)]: 0 },
+              _idleStart: 5118,
+              parser: 
+               HTTPParser {
+                 '0': 
+                  { [Function: parserOnHeaders]
+                    [length]: 2,
+                    [name]: 'parserOnHeaders',
+                    [prototype]: parserOnHeaders { [constructor]: [Circular] } },
+                 '1': 
+                  { [Function: parserOnHeadersComplete]
+                    [length]: 9,
+                    [name]: 'parserOnHeadersComplete',
+                    [prototype]: parserOnHeadersComplete { [constructor]: [Circular] } },
+                 '2': 
+                  { [Function: parserOnBody]
+                    [length]: 3,
+                    [name]: 'parserOnBody',
+                    [prototype]: parserOnBody { [constructor]: [Circular] } },
+                 '3': 
+                  { [Function: parserOnMessageComplete]
+                    [length]: 0,
+                    [name]: 'parserOnMessageComplete',
+                    [prototype]: parserOnMessageComplete { [constructor]: [Circular] } },
+                 '4': 
+                  { [Function: onParserExecute]
+                    [length]: 2,
+                    [name]: 'onParserExecute',
+                    [prototype]: onParserExecute { [constructor]: [Circular] } },
+                 _headers: [ [length]: 0 ],
+                 _url: '',
+                 _consumed: true,
+                 socket: [Circular],
+                 incoming: null,
+                 outgoing: null,
+                 maxHeaderPairs: 2000,
+                 onIncoming: 
+                  { [Function: parserOnIncoming]
+                    [length]: 2,
+                    [name]: 'parserOnIncoming',
+                    [prototype]: parserOnIncoming { [constructor]: [Circular] } } },
+              on: 
+               { [Function: socketOnWrap]
+                 [length]: 2,
+                 [name]: 'socketOnWrap',
+                 [prototype]: socketOnWrap { [constructor]: [Circular] } },
+              _paused: false,
+              read: 
+               { [Function]
+                 [length]: 1,
+                 [name]: '',
+                 [prototype]: { [constructor]: [Circular] } },
+              _consuming: true,
+              [Symbol(bytesRead)]: 0 },
+           _idleStart: 5118,
+           parser: 
+            HTTPParser {
+              '0': 
+               { [Function: parserOnHeaders]
+                 [length]: 2,
+                 [name]: 'parserOnHeaders',
+                 [prototype]: parserOnHeaders { [constructor]: [Circular] } },
+              '1': 
+               { [Function: parserOnHeadersComplete]
+                 [length]: 9,
+                 [name]: 'parserOnHeadersComplete',
+                 [prototype]: parserOnHeadersComplete { [constructor]: [Circular] } },
+              '2': 
+               { [Function: parserOnBody]
+                 [length]: 3,
+                 [name]: 'parserOnBody',
+                 [prototype]: parserOnBody { [constructor]: [Circular] } },
+              '3': 
+               { [Function: parserOnMessageComplete]
+                 [length]: 0,
+                 [name]: 'parserOnMessageComplete',
+                 [prototype]: parserOnMessageComplete { [constructor]: [Circular] } },
+              '4': 
+               { [Function: onParserExecute]
+                 [length]: 2,
+                 [name]: 'onParserExecute',
+                 [prototype]: onParserExecute { [constructor]: [Circular] } },
+              _headers: [ [length]: 0 ],
+              _url: '',
+              _consumed: true,
+              socket: [Circular],
+              incoming: null,
+              outgoing: null,
+              maxHeaderPairs: 2000,
+              onIncoming: 
+               { [Function: parserOnIncoming]
+                 [length]: 2,
+                 [name]: 'parserOnIncoming',
+                 [prototype]: parserOnIncoming { [constructor]: [Circular] } } },
+           on: 
+            { [Function: socketOnWrap]
+              [length]: 2,
+              [name]: 'socketOnWrap',
+              [prototype]: socketOnWrap { [constructor]: [Circular] } },
+           _paused: false,
+           read: 
+            { [Function]
+              [length]: 1,
+              [name]: '',
+              [prototype]: { [constructor]: [Circular] } },
+           _consuming: true,
+           [Symbol(bytesRead)]: 0 },
+        _idleStart: 5118,
+        parser: 
+         HTTPParser {
+           '0': 
+            { [Function: parserOnHeaders]
+              [length]: 2,
+              [name]: 'parserOnHeaders',
+              [prototype]: parserOnHeaders { [constructor]: [Circular] } },
+           '1': 
+            { [Function: parserOnHeadersComplete]
+              [length]: 9,
+              [name]: 'parserOnHeadersComplete',
+              [prototype]: parserOnHeadersComplete { [constructor]: [Circular] } },
+           '2': 
+            { [Function: parserOnBody]
+              [length]: 3,
+              [name]: 'parserOnBody',
+              [prototype]: parserOnBody { [constructor]: [Circular] } },
+           '3': 
+            { [Function: parserOnMessageComplete]
+              [length]: 0,
+              [name]: 'parserOnMessageComplete',
+              [prototype]: parserOnMessageComplete { [constructor]: [Circular] } },
+           '4': 
+            { [Function: onParserExecute]
+              [length]: 2,
+              [name]: 'onParserExecute',
+              [prototype]: onParserExecute { [constructor]: [Circular] } },
+           _headers: [ [length]: 0 ],
+           _url: '',
+           _consumed: true,
+           socket: [Circular],
+           incoming: null,
+           outgoing: null,
+           maxHeaderPairs: 2000,
+           onIncoming: 
+            { [Function: parserOnIncoming]
+              [length]: 2,
+              [name]: 'parserOnIncoming',
+              [prototype]: parserOnIncoming { [constructor]: [Circular] } } },
+        on: 
+         { [Function: socketOnWrap]
+           [length]: 2,
+           [name]: 'socketOnWrap',
+           [prototype]: socketOnWrap { [constructor]: [Circular] } },
+        _paused: false,
+        read: 
+         { [Function]
+           [length]: 1,
+           [name]: '',
+           [prototype]: { [constructor]: [Circular] } },
+        _consuming: true,
+        [Symbol(bytesRead)]: 0 },
+     _timer: 
+      Timer {
+        '0': 
+         { [Function: listOnTimeout]
+           [length]: 0,
+           [name]: 'listOnTimeout',
+           [prototype]: listOnTimeout { [constructor]: [Circular] } },
+        _list: [Circular] },
+     _unrefed: true,
+     msecs: 120000 },
+  _idleStart: 8095,
+  parser: 
+   HTTPParser {
+     '0': 
+      { [Function: parserOnHeaders]
+        [length]: 2,
+        [name]: 'parserOnHeaders',
+        [prototype]: parserOnHeaders { [constructor]: [Circular] } },
+     '1': 
+      { [Function: parserOnHeadersComplete]
+        [length]: 9,
+        [name]: 'parserOnHeadersComplete',
+        [prototype]: parserOnHeadersComplete { [constructor]: [Circular] } },
+     '2': 
+      { [Function: parserOnBody]
+        [length]: 3,
+        [name]: 'parserOnBody',
+        [prototype]: parserOnBody { [constructor]: [Circular] } },
+     '3': 
+      { [Function: parserOnMessageComplete]
+        [length]: 0,
+        [name]: 'parserOnMessageComplete',
+        [prototype]: parserOnMessageComplete { [constructor]: [Circular] } },
+     '4': 
+      { [Function: onParserExecute]
+        [length]: 2,
+        [name]: 'onParserExecute',
+        [prototype]: onParserExecute { [constructor]: [Circular] } },
+     _headers: [ [length]: 0 ],
+     _url: '',
+     _consumed: true,
+     socket: [Circular],
+     incoming: 
+      IncomingMessage {
+        _readableState: 
+         ReadableState {
+           objectMode: false,
+           highWaterMark: 16384,
+           buffer: BufferList { head: null, tail: null, length: 0 },
+           length: 0,
+           pipes: null,
+           pipesCount: 0,
+           flowing: true,
+           ended: true,
+           endEmitted: true,
+           reading: false,
+           sync: false,
+           needReadable: false,
+           emittedReadable: false,
+           readableListening: false,
+           resumeScheduled: false,
+           defaultEncoding: 'utf8',
+           ranOut: false,
+           awaitDrain: 0,
+           readingMore: false,
+           decoder: null,
+           encoding: null },
+        readable: false,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        socket: [Circular],
+        connection: [Circular],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: 
+         { host: 'localhost:8080',
+           connection: 'keep-alive',
+           'content-length': '211',
+           accept: '*/*',
+           origin: 'http://localhost:8080',
+           'x-requested-with': 'XMLHttpRequest',
+           'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+           authorization: 'Basic Q29sbGVjdElPLUdyYW50LUFjY2VzczpjTDRDMjVjbC4=',
+           'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+           referer: 'http://localhost:8080/',
+           'accept-encoding': 'gzip, deflate, br',
+           'accept-language': 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4',
+           cookie: 'io=wiQP7ZFiFYmyI2F-AAAA' },
+        rawHeaders: 
+         [ 'Host',
+           'localhost:8080',
+           'Connection',
+           'keep-alive',
+           'Content-Length',
+           '211',
+           'Accept',
+           '*/*',
+           'Origin',
+           'http://localhost:8080',
+           'X-Requested-With',
+           'XMLHttpRequest',
+           'User-Agent',
+           'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+           'Authorization',
+           'Basic Q29sbGVjdElPLUdyYW50LUFjY2VzczpjTDRDMjVjbC4=',
+           'Content-Type',
+           'application/x-www-form-urlencoded; charset=UTF-8',
+           'Referer',
+           'http://localhost:8080/',
+           'Accept-Encoding',
+           'gzip, deflate, br',
+           'Accept-Language',
+           'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4',
+           'Cookie',
+           'io=wiQP7ZFiFYmyI2F-AAAA',
+           [length]: 26 ],
+        trailers: {},
+        rawTrailers: [ [length]: 0 ],
+        upgrade: false,
+        url: '/channel',
+        method: 'POST',
+        statusCode: null,
+        statusMessage: null,
+        client: [Circular],
+        _consuming: true,
+        _dumped: false,
+        next: 
+         { [Function: next]
+           [length]: 1,
+           [name]: 'next',
+           [prototype]: next { [constructor]: [Circular] } },
+        baseUrl: '',
+        originalUrl: '/channel',
+        _parsedUrl: 
+         Url {
+           protocol: null,
+           slashes: null,
+           auth: null,
+           host: null,
+           port: null,
+           hostname: null,
+           hash: null,
+           search: null,
+           query: null,
+           pathname: '/channel',
+           path: '/channel',
+           href: '/channel',
+           _raw: '/channel' },
+        params: {},
+        query: {},
+        res: 
+         ServerResponse {
+           domain: null,
+           _events: 
+            { finish: 
+               { [Function: resOnFinish]
+                 [length]: 0,
+                 [name]: 'resOnFinish',
+                 [prototype]: resOnFinish { [constructor]: [Circular] } } },
+           _eventsCount: 1,
+           _maxListeners: undefined,
+           output: [ [length]: 0 ],
+           outputEncodings: [ [length]: 0 ],
+           outputCallbacks: [ [length]: 0 ],
+           outputSize: 0,
+           writable: true,
+           _last: false,
+           upgrading: false,
+           chunkedEncoding: false,
+           shouldKeepAlive: true,
+           useChunkedEncodingByDefault: true,
+           sendDate: true,
+           _removedHeader: {},
+           _contentLength: null,
+           _hasBody: true,
+           _trailer: '',
+           finished: false,
+           _headerSent: false,
+           socket: [Circular],
+           connection: [Circular],
+           _header: null,
+           _headers: { 'x-powered-by': 'Express' },
+           _headerNames: { 'x-powered-by': 'X-Powered-By' },
+           _onPendingData: 
+            { [Function: updateOutgoingData]
+              [length]: 1,
+              [name]: 'updateOutgoingData',
+              [prototype]: updateOutgoingData { [constructor]: [Circular] } },
+           req: [Circular],
+           locals: {},
+           _startAt: undefined,
+           _startTime: undefined },
+        body: 
+         { token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9maWxlIjp7ImNsaWVudElkIjoiQWhtZXQiLCJjaGFubmVsIjoidGVzdCJ9LCJpYXQiOjE1MDM3NzAzMzYsImV4cCI6MTUwMzg1NjczNn0.5G_hm24jbWiyC91LD7VnAQYSjpK3LPWeMkBywKwW9hU',
+           channel: 'test' },
+        _body: true,
+        length: undefined,
+        read: 
+         { [Function]
+           [length]: 1,
+           [name]: '',
+           [prototype]: { [constructor]: [Circular] } },
+        _startAt: [ 600464, 682629696, [length]: 2 ],
+        _startTime: 2017-08-26T17:58:57.446Z,
+        _remoteAddress: '::1',
+        auth: { user: 'CollectIO-Grant-Access', password: 'cL4C25cl.' },
+        route: 
+         Route {
+           path: '/channel',
+           stack: 
+            [ Layer {
+                handle: 
+                 { [Function: channelAction]
+                   [length]: 2,
+                   [name]: 'channelAction',
+                   [arguments]: 
+                    { '0': [Circular],
+                      '1': 
+                       ServerResponse {
+                         domain: null,
+                         _events: 
+                          { finish: 
+                             { [Function: resOnFinish]
+                               [length]: 0,
+                               [name]: 'resOnFinish',
+                               [prototype]: resOnFinish { [constructor]: [Circular] } } },
+                         _eventsCount: 1,
+                         _maxListeners: undefined,
+                         output: [ [length]: 0 ],
+                         outputEncodings: [ [length]: 0 ],
+                         outputCallbacks: [ [length]: 0 ],
+                         outputSize: 0,
+                         writable: true,
+                         _last: false,
+                         upgrading: false,
+                         chunkedEncoding: false,
+                         shouldKeepAlive: true,
+                         useChunkedEncodingByDefault: true,
+                         sendDate: true,
+                         _removedHeader: {},
+                         _contentLength: null,
+                         _hasBody: true,
+                         _trailer: '',
+                         finished: false,
+                         _headerSent: false,
+                         socket: [Circular],
+                         connection: [Circular],
+                         _header: null,
+                         _headers: { 'x-powered-by': 'Express' },
+                         _headerNames: { 'x-powered-by': 'X-Powered-By' },
+                         _onPendingData: 
+                          { [Function: updateOutgoingData]
+                            [length]: 1,
+                            [name]: 'updateOutgoingData',
+                            [prototype]: updateOutgoingData { [constructor]: [Circular] } },
+                         req: [Circular],
+                         locals: {},
+                         _startAt: undefined,
+                         _startTime: undefined },
+                      '2': 
+                       { [Function: next]
+                         [length]: 1,
+                         [name]: 'next',
+                         [prototype]: next { [constructor]: [Circular] } },
+                      [length]: 3,
+                      [callee]: [Circular],
+                      [Symbol(Symbol.iterator)]: 
+                       { [Function: values]
+                         [length]: 0,
+                         [name]: 'values',
+                         [prototype]: values { [constructor]: [Circular] } } },
+                   [caller]: null,
+                   [prototype]: channelAction { [constructor]: [Circular] } },
+                name: 'channelAction',
+                params: undefined,
+                path: undefined,
+                keys: [ [length]: 0 ],
+                regexp: { /^\/?$/i [lastIndex]: 0, fast_star: false, fast_slash: false },
+                method: 'post' },
+              [length]: 1 ],
+           methods: { post: true } } },
+     outgoing: null,
+     maxHeaderPairs: 2000,
+     onIncoming: 
+      { [Function: parserOnIncoming]
+        [length]: 2,
+        [name]: 'parserOnIncoming',
+        [prototype]: parserOnIncoming { [constructor]: [Circular] } } },
+  on: 
+   { [Function: socketOnWrap]
+     [length]: 2,
+     [name]: 'socketOnWrap',
+     [prototype]: socketOnWrap { [constructor]: [Circular] } },
+  _paused: false,
+  read: 
+   { [Function]
+     [length]: 1,
+     [name]: '',
+     [prototype]: { [constructor]: [Circular] } },
+  _consuming: true,
+  _httpMessage: 
+   ServerResponse {
+     domain: null,
+     _events: 
+      { finish: 
+         { [Function: resOnFinish]
+           [length]: 0,
+           [name]: 'resOnFinish',
+           [prototype]: resOnFinish { [constructor]: [Circular] } } },
+     _eventsCount: 1,
+     _maxListeners: undefined,
+     output: [ [length]: 0 ],
+     outputEncodings: [ [length]: 0 ],
+     outputCallbacks: [ [length]: 0 ],
+     outputSize: 0,
+     writable: true,
+     _last: false,
+     upgrading: false,
+     chunkedEncoding: false,
+     shouldKeepAlive: true,
+     useChunkedEncodingByDefault: true,
+     sendDate: true,
+     _removedHeader: {},
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: false,
+     _headerSent: false,
+     socket: [Circular],
+     connection: [Circular],
+     _header: null,
+     _headers: { 'x-powered-by': 'Express' },
+     _headerNames: { 'x-powered-by': 'X-Powered-By' },
+     _onPendingData: 
+      { [Function: updateOutgoingData]
+        [length]: 1,
+        [name]: 'updateOutgoingData',
+        [prototype]: updateOutgoingData { [constructor]: [Circular] } },
+     req: 
+      IncomingMessage {
+        _readableState: 
+         ReadableState {
+           objectMode: false,
+           highWaterMark: 16384,
+           buffer: BufferList { head: null, tail: null, length: 0 },
+           length: 0,
+           pipes: null,
+           pipesCount: 0,
+           flowing: true,
+           ended: true,
+           endEmitted: true,
+           reading: false,
+           sync: false,
+           needReadable: false,
+           emittedReadable: false,
+           readableListening: false,
+           resumeScheduled: false,
+           defaultEncoding: 'utf8',
+           ranOut: false,
+           awaitDrain: 0,
+           readingMore: false,
+           decoder: null,
+           encoding: null },
+        readable: false,
+        domain: null,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        socket: [Circular],
+        connection: [Circular],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: 
+         { host: 'localhost:8080',
+           connection: 'keep-alive',
+           'content-length': '211',
+           accept: '*/*',
+           origin: 'http://localhost:8080',
+           'x-requested-with': 'XMLHttpRequest',
+           'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+           authorization: 'Basic Q29sbGVjdElPLUdyYW50LUFjY2VzczpjTDRDMjVjbC4=',
+           'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+           referer: 'http://localhost:8080/',
+           'accept-encoding': 'gzip, deflate, br',
+           'accept-language': 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4',
+           cookie: 'io=wiQP7ZFiFYmyI2F-AAAA' },
+        rawHeaders: 
+         [ 'Host',
+           'localhost:8080',
+           'Connection',
+           'keep-alive',
+           'Content-Length',
+           '211',
+           'Accept',
+           '*/*',
+           'Origin',
+           'http://localhost:8080',
+           'X-Requested-With',
+           'XMLHttpRequest',
+           'User-Agent',
+           'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+           'Authorization',
+           'Basic Q29sbGVjdElPLUdyYW50LUFjY2VzczpjTDRDMjVjbC4=',
+           'Content-Type',
+           'application/x-www-form-urlencoded; charset=UTF-8',
+           'Referer',
+           'http://localhost:8080/',
+           'Accept-Encoding',
+           'gzip, deflate, br',
+           'Accept-Language',
+           'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4',
+           'Cookie',
+           'io=wiQP7ZFiFYmyI2F-AAAA',
+           [length]: 26 ],
+        trailers: {},
+        rawTrailers: [ [length]: 0 ],
+        upgrade: false,
+        url: '/channel',
+        method: 'POST',
+        statusCode: null,
+        statusMessage: null,
+        client: [Circular],
+        _consuming: true,
+        _dumped: false,
+        next: 
+         { [Function: next]
+           [length]: 1,
+           [name]: 'next',
+           [prototype]: next { [constructor]: [Circular] } },
+        baseUrl: '',
+        originalUrl: '/channel',
+        _parsedUrl: 
+         Url {
+           protocol: null,
+           slashes: null,
+           auth: null,
+           host: null,
+           port: null,
+           hostname: null,
+           hash: null,
+           search: null,
+           query: null,
+           pathname: '/channel',
+           path: '/channel',
+           href: '/channel',
+           _raw: '/channel' },
+        params: {},
+        query: {},
+        res: [Circular],
+        body: 
+         { token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9maWxlIjp7ImNsaWVudElkIjoiQWhtZXQiLCJjaGFubmVsIjoidGVzdCJ9LCJpYXQiOjE1MDM3NzAzMzYsImV4cCI6MTUwMzg1NjczNn0.5G_hm24jbWiyC91LD7VnAQYSjpK3LPWeMkBywKwW9hU',
+           channel: 'test' },
+        _body: true,
+        length: undefined,
+        read: 
+         { [Function]
+           [length]: 1,
+           [name]: '',
+           [prototype]: { [constructor]: [Circular] } },
+        _startAt: [ 600464, 682629696, [length]: 2 ],
+        _startTime: 2017-08-26T17:58:57.446Z,
+        _remoteAddress: '::1',
+        auth: { user: 'CollectIO-Grant-Access', password: 'cL4C25cl.' },
+        route: 
+         Route {
+           path: '/channel',
+           stack: 
+            [ Layer {
+                handle: 
+                 { [Function: channelAction]
+                   [length]: 2,
+                   [name]: 'channelAction',
+                   [arguments]: 
+                    { '0': [Circular],
+                      '1': [Circular],
+                      '2': 
+                       { [Function: next]
+                         [length]: 1,
+                         [name]: 'next',
+                         [prototype]: next { [constructor]: [Circular] } },
+                      [length]: 3,
+                      [callee]: [Circular],
+                      [Symbol(Symbol.iterator)]: 
+                       { [Function: values]
+                         [length]: 0,
+                         [name]: 'values',
+                         [prototype]: values { [constructor]: [Circular] } } },
+                   [caller]: null,
+                   [prototype]: channelAction { [constructor]: [Circular] } },
+                name: 'channelAction',
+                params: undefined,
+                path: undefined,
+                keys: [ [length]: 0 ],
+                regexp: { /^\/?$/i [lastIndex]: 0, fast_star: false, fast_slash: false },
+                method: 'post' },
+              [length]: 1 ],
+           methods: { post: true } } },
+     locals: {},
+     _startAt: undefined,
+     _startTime: undefined },
+  _peername: { address: '::1', family: 'IPv6', port: 55429 },
+  [Symbol(bytesRead)]: 0 }

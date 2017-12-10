@@ -1,0 +1,20 @@
+{
+    "db": {
+        "user": "rt_admin",
+        "pass": "rT4R25rt.",
+        "url": "localhost",
+        "port": 9090,
+        "channel": "robotrain"
+    },
+    "ai": {
+        "apiai": {
+            "clientId": "6f27f454479945f3a7a1d58c611a22dc",
+            "sessionId": "083d3a4529674f75a99865dc1634f196"
+        }
+    },
+    "jwtSecret": "jT4J25jt.",
+    "authUser": "CollectIO-Grant-Access",
+    "authPassword": "cL4C25cl.",
+    "firstStartLog": "Server listening on port",
+    "port": 8080
+}

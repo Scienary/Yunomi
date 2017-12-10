@@ -1,0 +1,196 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Socket.IO chat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font: 13px Helvetica, Arial;
+        }
+
+        form {
+            background: #000;
+            padding: 3px;
+            bottom: 0;
+            width: 100%;
+        }
+
+            form input {
+                border: 0;
+                padding: 10px;
+                width: 90%;
+                margin-right: .5%;
+            }
+
+            form button {
+                width: 9%;
+                background: rgb(130, 224, 255);
+                border: none;
+                padding: 10px;
+            }
+
+        #messages {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            #messages li {
+                padding: 5px 10px;
+            }
+
+                #messages li:nth-child(odd) {
+                    background: #eee;
+                }
+    </style>
+</head>
+<body>
+    <ul id="messages"></ul>
+    <div>
+        <h3>Chat</h3>
+        <form id="chat" action="">
+            <input id="m" autocomplete="off" value="Whats Up?" /><button>Send</button>
+        </form>
+    </div>
+    <div>
+        <h3>Get collection</h3>
+        <form id="collection" action="">
+            <input id="m" autocomplete="off" value="account" /><button>Send</button>
+        </form>
+    </div>
+    <div>
+        <h3>Connect to channel</h3>
+        <form id="channel" action="">
+            <input id="m" autocomplete="off" value="test" /><button>Send</button>
+        </form>
+    </div>
+    <div>
+        <h3>Login</h3>
+        <form id="login" action="">
+            <input name="username" autocomplete="off" value="Ahmet" />
+            <input name="password" autocomplete="off" value="testtest" />
+            <button>Login</button>
+        </form>
+    </div>
+    <div>
+        <h3>Register</h3>
+        <form id="register" action="">
+            <input name="username" autocomplete="off" value="Ahmet" />
+            <input name="password" autocomplete="off" value="testtest" />
+            <button>Register</button>
+        </form>
+    </div>
+    <div>
+        <h3>Output</h3>
+        <span id="output"></span>
+    </div>
+    <script src="socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+            $('#chat').submit(function (e) {
+                e.preventDefault();
+                socket.emit('chat message', { msg: $('#chat #m').val(), username: account.username });
+                return false;
+            });
+
+            $('#collection').submit(function (e) {
+                e.preventDefault();
+                socket.emit('collection', $('#collection #m').val());
+                return false;
+            });
+
+            $('#channel').submit(function (e) {
+                e.preventDefault();
+                var channel = $('#channel #m').val();
+                $.ajax({
+                    url: '/channel',
+                    method: 'POST',
+                    data: {
+                        token: token,
+                        channel: channel
+                    },
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader('Authorization', 'Basic Q29sbGVjdElPLUdyYW50LUFjY2VzczpjTDRDMjVjbC4=');
+                    },
+                    success: function (result) {
+                        $('#output').text(JSON.stringify(result));
+                        connect_socket(token);
+                    },
+                    error: function (err) {
+                        $('#output').text(err.responseText);
+                    }
+
+                });
+            });
+
+            var token;
+            var account = {};
+            $('#login').submit(function (e) {
+                e.preventDefault();
+                account.username = $('#login input[name=username]').val();
+                account.password = $('#login input[name=password]').val();
+                $.post('/auth', {
+                    clientId: account.username,
+                    secretId: account.password,
+                    channel: "test"
+                }).done(function (result) {
+                    token = result.token;
+                    console.log(token);
+                    $('#output').text(token);
+                });
+            });
+
+            $('#create').submit(function (e) {
+                e.preventDefault();
+                account.username = $('#create input[name=username]').val();
+                account.password = $('#create input[name=password]').val();
+                $.post('/create', {
+                    clientId: account.username,
+                    secretId: account.password,
+                    channel: "test"
+                }).done(function (result) {
+                    connect_socket(result.token);
+                });
+            });
+
+            var socket;
+            function connect_socket(token) {
+                var nsp = $('#channel #m').val();
+                socket = io('/' + nsp,  {
+                    query: 'token=' + token,
+                    port: 9090
+                });
+
+                socket.on('connect', function () {
+                    console.log('authenticated');
+                    $('#output').text('authenticated');
+                }).on('disconnect', function () {
+                    console.log('disconnected');
+                    $('#output').text('disconnected');
+                    });
+                socket.on('chat message', function (data) {
+                    $('#messages').append($('<li>').text(data.username + ': ' + data.msg));
+                });
+                socket.on('collection', res => {
+                    console.log(res);
+                    $('#output').text(JSON.stringify(res));
+                });
+                socket.on('authentication', res => {
+                    console.log(res);
+                    $('#output').text(JSON.stringify(res));
+                });
+                socket.on('error', err => {
+                    console.log(err);
+                    $('#output').text(JSON.stringify(res));
+                });
+            }
+        });
+    </script>
+</body>
+</html>
