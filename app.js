@@ -66,8 +66,9 @@ keystone.set('routes', require('./routes'));
 //});
 
 keystone.set('nav', {
-    conversationData: ['actions', 'conversations', 'languages'],
     accountData: ['admins', 'clients'],
+    career: ['candidates', 'skills'],
+    conversationData: ['actions', 'conversations', 'languages']
 });
 
 // Start Keystone to connect to your database and initialise the web server
